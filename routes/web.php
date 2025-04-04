@@ -15,10 +15,5 @@ use App\Http\Controllers\Controller as DesktopController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/', [DesktopController::class, 'home']);
-Route::get('/people/{name}', [DesktopController::class, 'handlePeople']);
-Route::get('/people', [DesktopController::class, 'people']);
+Route::get('/team', [DesktopController::class, 'team']);

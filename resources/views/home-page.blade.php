@@ -6,34 +6,14 @@
     <meta name="viewport" content="width=350, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Lato:800,600,500,400,700|Inter:600" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet" />
-    <link href="css/animation.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
+      @include('navbar')
       <!-- Hero Section -->
-        <section id="navbar">
-            <nav>
-                <img class="logo" alt="MMBA Logo" src="logo.png" onclick="goTo('hero')"/>
-                <img class="sub-menu-logo" src="/burger.svg"/> <!-- appears after 1000px -->
-                <div class="nav-links">
-                    <a href="#about" class="nav-link">SOBRE NÓS</a>
-                    <a href="#team" class="nav-link">EQUIPA</a>
-                    <a href="#services" class="nav-link">SERVIÇOS</a>
-                    <button class="contact-btn ">CONTACTOS</button>
-                </div>
-                <div class="sub-menu">
-                    <div class="submenu-button" onclick="goTo('about')">SOBRE NÓS</div>
-                    <div class="submenu-button" onclick="goTo('team')">EQUIPA</div>
-                    <div class="submenu-button" onclick="goTo('services')">SERVIÇOS</div>
-                    <div class="submenu-button" onclick="goTo('contacts')">CONTACTOS</div>
-                </div>
-            </nav>
-        </section>
-
       <section class="hero" id="hero">
-
-
-
         <div class="hero-content">
           <div class="hero-text">
             <span>MEDINA</span>
@@ -93,7 +73,6 @@
           </div>
         </div>
       </section>
-
       <!-- Services Section -->
       <section class="services" id="services">
         <div class="services-header">
@@ -108,60 +87,7 @@
 
         <button class="see-more-btn">FALE CONNOSCO</button>
       </section>
-
-      <!-- Footer -->
-      <footer>
-        <div class="footer-content">
-          <div class="footer-logo" onclick="goTo('hero')">
-            <img alt="MMBA Logo" src="logo-black.png" />
-            <p>
-              <span style="padding-left: 10px">MEDINA MONTEIRO </span>
-              <span>BENSIMON </span>
-              <span class="highlight">ADVOGADOS</span>
-            </p>
-          </div>
-
-          <div class="footer-info">
-            <div class="contact-info">
-              <h3>MORADA</h3>
-              <p>Rua Garret, n.º 19, 2ºC<br />1200-203 Lisboa, Portugal</p>
-            </div>
-
-            <div class="contact-info">
-              <h3>TELEFONE</h3>
-              <p>926547825</p>
-            </div>
-
-            <div class="contact-info">
-              <h3>EMAIL</h3>
-              <a href="mailto:mmbadvogados@gmail.com">mmbadvogados@gmail.com</a>
-            </div>
-
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">
-                <img alt="Facebook" src="/home/facebook.svg" />
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <img alt="LinkedIn" src="/home/linkedin.svg" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="footer-bottom">
-          <p class="copyright">
-            Copyright 2022 - 2025 © MMBA Advogados, Sociedade de Advogados, SP
-            RL. Todos os direitos reservados.
-          </p>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookies Policy</a>
-          </div>
-        </div>
-      </footer>
+      @include('footer')
     </div>
 
     <script>
@@ -239,7 +165,7 @@
         let navbar = document.getElementById('navbar');
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 840) navbar.style.backgroundColor = '#000';
+            if (window.scrollY > 240) navbar.style.backgroundColor = '#000';
             else navbar.style.background = 'none';
         });
 

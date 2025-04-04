@@ -14,12 +14,7 @@ class Controller extends BaseController
         return view('home-page');
     }
 
-    public function people() {
-        return view('people.people');
-    }
-
-    public function handlePeople(string $name) {
-        if ($name == "vasco") return view('people.vasco');
-        return redirect('/');
+    public function team() {
+        return view('people');
     }
 }
