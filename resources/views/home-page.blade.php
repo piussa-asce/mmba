@@ -16,8 +16,7 @@
       <section class="hero" id="hero">
         <div class="hero-content">
           <div class="hero-text">
-            <span>MEDINA</span>
-            <span>MONTEIRO</span>
+            <span>MEDINA MONTEIRO</span>
             <span>BENSIMON</span>
             <span class="highlight">ADVOGADOS</span>
           </div>
@@ -163,9 +162,8 @@
         });
 
         let navbar = document.getElementById('navbar');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 240) navbar.style.backgroundColor = '#000';
+            if (window.scrollY > 20) navbar.style.backgroundColor = '#000';
             else navbar.style.background = 'none';
         });
 

@@ -3,7 +3,7 @@
 :root {
     --primary-color: #dfbb55;
     --text-color: #fff;
-    --background-color: #000;
+    --background-color: #111;
 }
 
 * {
@@ -95,7 +95,7 @@ body {
 
 .page-title h1 {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 12px;
 }
 
 /* Hero Section */
@@ -111,10 +111,10 @@ body {
 }
 
 .hero-title h2 {
-    font-size: 1rem;
+    font-size: 3rem;
     line-height: 1.35;
     font-weight: 500;
-    max-width: 30vw;
+    max-width: 41vw;
 }
 
 .highlight {

@@ -24,7 +24,7 @@
             <h2>
               <span>UNIDOS PELA </span>
               <span class="highlight">EXCELÊNCIA</span>
-              <span>, COMPROMETIDOS COM O SUCESSO.</span>
+              <span>COMPROMETIDOS COM O SUCESSO.</span>
             </h2>
           </div>
           <div class="hero-quote">

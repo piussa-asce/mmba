@@ -1,8 +1,9 @@
 :root {
     --primary-color: #dcb443;
+    --secondary-color: #FFBB00;
     --text-color: #000000;
     --text-light: #00000066;
-    --white: #ffffff;
+    --white: #d9d9d9;
     --yellow-bg: rgba(241, 182, 41, 0.4);
 }
 
@@ -29,7 +30,7 @@ body {
     position: relative;
     width: 100%;
     height: 920px;
-    background-image: url('/home/tingey-injury-law-firm-dzpc4uy8zty-unsplash-1.png');
+    background-image: url('/home/hero.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -42,6 +43,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 17px;
 }
 
 .contact-btn.dark {
@@ -71,7 +73,7 @@ body {
 }
 
 span.highlight {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero-quote {
