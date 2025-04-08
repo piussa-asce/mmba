@@ -22,18 +22,19 @@
         <section class="hero-section">
           <div class="hero-title">
             <h2>
-              <span>UNIDOS PELA </span>
-              <span class="highlight">EXCELÊNCIA</span>
-              <span>COMPROMETIDOS COM O SUCESSO.</span>
+              <span>Unidos pela </span>
+              <span class="highlight">excelência</span>,<br>
+              <span>comprometidos com o</span><br>
+              <span>sucesso.</span>
             </h2>
           </div>
           <div class="hero-quote">
             <p>
-              "A NOSSA EQUIPA É FORMADA POR PROFISSIONAIS EXPERIENTES E
-              DEDICADOS, QUE TRABALHAM EM CONJUNTO PARA OFERECER
-              SOLUÇÕES JURÍDICAS EFICAZES E INOVADORAS. ACREDITAMOS QUE A
-              EXCELÊNCIA VEM DO TRABALHO COLABORATIVO E DO COMPROMISSO COM OS
-              NOSSOS CLIENTES."
+              "A nossa equipa é formada por profissionais experientes e
+              dedicados, que trabalham em conjunto para oferecer
+              soluções jurídicas eficazes e inovadoras. Acreditamos que a
+              excelência vem do trabalho em equipa e do compromisso com os
+              nossos clientes."
             </p>
           </div>
         </section>
@@ -49,45 +50,67 @@
                 {
                     id: 1,
                     name: "Bruno Medina Monteiro",
-                    title: "OF COUNSEL, LISBON",
+                    title: "Advogado, Lisboa",
                     description:
-                    "O advogado iniciou o seu percurso profissional há 20 anos, e integrou a AFMA em 2023.\nTem desenvolvido diferentes competências e experiência em áreas como o Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
+                    "O advogado iniciou o seu percurso profissional há mais de 20 anos, tendo fundado a MMBA em 2025 após uma sólida experiência em várias sociedades de advogados. Desenvolve a sua prática sobretudo nas áreas de Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
                     quote:
                     '"Um advogado é um defensor incansável da justiça, comprometido em proteger os direitos dos seus clientes com dedicação e integridade."',
-                    image: "/people/image-6.png",
+                    image: "/people/image-bruno-people.png",
                     imagePosition: "left",
                 },
                 {
                     id: 2,
                     name: "Dafne Bensimon",
-                    title: "OF COUNSEL, LISBON",
+                    title: "Advogado, Lisboa",
                     description:
-                    "O advogado iniciou o seu percurso profissional há 20 anos, e integrou a AFMA em 2023.\nTem desenvolvido diferentes competências e experiência em áreas como o Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
+                    "Advogada com um percurso marcado por uma prática consistente e internacional, fundou a MMBA em 2025. Tem experiência consolidada em Direito Imobiliário, Direito dos Estrangeiros, Nacionalidade e Direito Administrativo. Acompanha de perto transações e projetos imobiliários de distintas naturezas, com uma abordagem cuidadosa e eficaz.",
                     quote:
-                    '"Um advogado é um defensor incansável da justiça, comprometido em proteger os direitos dos seus clientes com dedicação e integridade."',
-                    image: "/people/image-7.png",
+                    '"A advocacia é o equilíbrio entre o rigor técnico e a empatia humana — é nisso que reside a verdadeira excelência."',
+                    image: "/people/image-dafne-people.png",
                     imagePosition: "right",
                 },
                 {
                     id: 3,
                     name: "Tomás da Silva Freitas",
-                    title: "OF COUNSEL, LISBON",
+                    title: "Advogado, Lisboa",
                     description:
-                    "O advogado iniciou o seu percurso profissional há 20 anos, e integrou a AFMA em 2023.\nTem desenvolvido diferentes competências e experiência em áreas como o Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
+                    "Licenciado em Direito e com formação avançada em Corporate Finance, iniciou a sua prática na advocacia em 2023. Colabora com a MMBA com especial enfoque nas áreas de Direito Societário, Direito Comercial e Direito Penal, trazendo uma abordagem analítica e determinada aos desafios jurídicos.",
                     quote:
-                    '"Um advogado é um defensor incansável da justiça, comprometido em proteger os direitos dos seus clientes com dedicação e integridade."',
+                    '"Na advocacia, conhecimento é poder — mas é a coragem em agir que verdadeiramente transforma."',
                     image: "/people/image-8.png",
                     imagePosition: "left",
                 },
                 {
                     id: 4,
                     name: "André da Silva Freitas",
-                    title: "OF COUNSEL, LISBON",
+                    title: "Advogado, Lisboa",
                     description:
-                    "O advogado iniciou o seu percurso profissional há 20 anos, e integrou a AFMA em 2023.\nTem desenvolvido diferentes competências e experiência em áreas como o Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
+                    "Advogado desde 2024, com formação pela Faculdade de Direito da Universidade de Lisboa. Traz para a MMBA uma prática focada no Direito Civil e no Direito da Família e Sucessões, exercendo com rigor, proximidade e profundo respeito pelas dimensões humanas de cada caso.",
                     quote:
-                    '"Um advogado é um defensor incansável da justiça, comprometido em proteger os direitos dos seus clientes com dedicação e integridade."',
-                    image: "/people/image-9.png",
+                    '"Ser advogado é escutar com atenção, aconselhar com sabedoria e agir com justiça."',
+                    image: "/people/image-andre-people.png",
+                    imagePosition: "right",
+                },
+                {
+                    id: 5,
+                    name: "Inês Kol de Carvalho",
+                    title: "Advogado, Lisboa",
+                    description:
+                    "Com uma carreira marcada pela versatilidade e experiência multidisciplinar, Inês integrou a MMBA em 2025. Desenvolve a sua prática nas áreas de Direito Imobiliário, Contencioso Civil, Direito dos Estrangeiros, Direito da Família e Nacionalidade, acompanhando com rigor técnico diversas transações e processos complexos.",
+                    quote:
+                    '"Na prática jurídica, cada detalhe conta — é na atenção ao pormenor que reside a confiança e a segurança do cliente."',
+                    image: "/people/image-ines-people.png",
+                    imagePosition: "left",
+                },
+                {
+                    id: 6,
+                    name: "Margarida Barros",
+                    title: "Assistente Administrativa, Lisboa",
+                    description:
+                    "",
+                    quote:
+                    '""',
+                    image: "/people/image-margarida-people.png",
                     imagePosition: "right",
                 },
             ];

@@ -17,4 +17,8 @@ class Controller extends BaseController
     public function team() {
         return view('people');
     }
+
+    public function contacts() {
+        return view('contacts');
+    }
 }
