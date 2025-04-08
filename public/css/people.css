@@ -16,7 +16,7 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 0 calc((100vw - 1440px)/2);;
+    padding: 0 calc((100vw - 1440px)/2);
 }
 
 .page-container {

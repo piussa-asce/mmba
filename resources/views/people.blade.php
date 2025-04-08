@@ -92,15 +92,6 @@
                 },
             ];
 
-            function goTo(id) {
-                document.getElementById(id).scrollIntoView({behavior: 'smooth'});
-            }
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 240) navbar.style.backgroundColor = '#000';
-                else navbar.style.background = 'none';
-            });
-
             document.addEventListener('DOMContentLoaded', () => {
                 populateTeam();
             });
@@ -149,12 +140,8 @@
                     
                     people.appendChild(teamCard);
                 });
-            }
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 10) navbar.style.backgroundColor = '#000';
-                else navbar.style.background = 'none';
-            });
-
+            }            
         </script>
+        <script src="/js/nav.js" async defer></script>
     </body>
 </html>

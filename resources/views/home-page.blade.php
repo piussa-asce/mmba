@@ -21,7 +21,7 @@
             <span class="highlight">ADVOGADOS</span>
           </div>
           <p class="hero-quote">"A DEMOCRACIA VAI PARA ALÉM DO DIREITO"</p>
-          <button class="contact-btn ">FALE CONNOSCO</button>
+          <button class="contact-btn " onclick="goTo('contacts')">FALE CONNOSCO</button>
         </div>
       </section>
 
@@ -63,7 +63,7 @@
               </div>
             </div>
 
-            <button class="contact-btn dark ">FALE CONNOSCO</button>
+            <button class="contact-btn dark" onclick="goTo('contacts')">FALE CONNOSCO</button>
           </div>
 
           <div class="about-image">
@@ -84,7 +84,7 @@
 
         <div class="services-grid" id="servicesGrid"></div>
 
-        <button class="see-more-btn">FALE CONNOSCO</button>
+        <button class="contact-btn dark" onclick="goTo('services')">VER MAIS</button>
       </section>
       @include('footer')
     </div>
@@ -135,10 +135,6 @@
         },
         ];
 
-        function goTo(id) {
-            document.getElementById(id).scrollIntoView({behavior: 'smooth'});
-        }
-
         // Populate services grid
         function populateServices() {
             const servicesGrid = document.getElementById('servicesGrid');
@@ -160,13 +156,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             populateServices();
         });
-
-        let navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) navbar.style.backgroundColor = '#000';
-            else navbar.style.background = 'none';
-        });
-
+        
     </script>
+    <script src="/js/nav.js" async defer></script>
   </body>
 </html>

@@ -53,7 +53,7 @@ body {
 
 .hero-content {
     position: absolute;
-    top: 322px;
+    top: 300px;
     max-width: 1440px;
     min-width: 500px;
 }
@@ -90,7 +90,7 @@ span.highlight {
 
 .subtitle {
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
 }
 
 .about-content {
@@ -157,14 +157,14 @@ span.highlight {
     justify-content: center;
     margin: 32px 0;
     background-color: var(--yellow-bg);
-    min-height: 480px;
+    min-height: 600px;
+    gap: 60px;
 }
 
 .services-header {
     max-width: 470px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 48px;
 }
 
 .services-header h2 {
@@ -175,11 +175,12 @@ span.highlight {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px 48px;
+    gap: 32px 64px;
     max-width: 1440px;
 }
 
 .service-item {
+    filter: invert(0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,13 +245,6 @@ span.highlight {
         margin: 0;
     }
 
-}
-
-
-@media (max-width: 1000px) {
-    .sub-menu-logo {
-        display: block;
-    }
 }
 
 @media (max-width: 768px) {
