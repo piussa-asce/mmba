@@ -20,9 +20,9 @@
             <span>BENSIMON</span>
             <span class="highlight">ADVOGADOS</span>
           </div>
-          <p class="hero-quote">"A DEMOCRACIA VAI PARA ALÉM DO DIREITO"</p>
+          <!-- <p class="hero-quote">"A DEMOCRACIA VAI PARA ALÉM DO DIREITO"</p> -->
           <button class="contact-btn " onclick="goTo('contacts')">FALE CONNOSCO</button>
-        </div>
+        </div> 
       </section>
 
       <!-- About Us Section -->

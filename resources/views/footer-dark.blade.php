@@ -17,12 +17,12 @@
 
         <div class="contact-info">
             <h3>TELEFONE</h3>
-            <p>+351 917730702</p>
+            <p>(+351) 218 386 856</p>
         </div>
 
         <div class="contact-info">
             <h3>EMAIL</h3>
-            <a href="mailto:mmba@mmba.pt">mmba@mmba.pt</a>
+            <a href="mailto:geral@mmba.pt">geral@mmba.pt</a>
         </div>
     </div>
 </div>
@@ -31,8 +31,7 @@
 
 <div class="footer-bottom">
     <p class="copyright">
-    Copyright 2022 - 2025 © MMBA Advogados, Sociedade de Advogados, SP
-    RL. Todos os direitos reservados.
+    Copyright 2025 © MMBA Advogados, Todos os direitos reservados.
     </p>
     <div class="footer-links">
     <a href="#">Privacy Policy</a>
