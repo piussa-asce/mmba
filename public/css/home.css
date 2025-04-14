@@ -5,13 +5,14 @@
     --text-light: #00000066;
     --white: #d9d9d9;
     --yellow-bg: rgba(241, 182, 41, 0.4);
+    --ff: Raleway;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--ff);
 }
 
 body {
@@ -109,6 +110,10 @@ span.highlight {
     margin-bottom: 32px;
 }
 
+.about-text p {
+    font-size: 20px;
+}
+
 .cards {
     display: flex;
     gap: 16px;
@@ -128,8 +133,6 @@ span.highlight {
     position: relative;
     min-width: 333px;
     height: 500px;
-    background-image: url('/home/office-space.png');
-    background-size: cover;
 }
 
 .rectangle {
@@ -150,69 +153,175 @@ span.highlight {
 
 /* Services Section */
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 32px 0;
-    background-color: var(--yellow-bg);
-    min-height: 600px;
-    gap: 60px;
-}
-
-.services-header {
-    max-width: 470px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.services-header h2 {
-    font-size: 28px;
-    margin-bottom: 12px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px 64px;
+    background: linear-gradient(to bottom, #FCCC50 50%, white 50%);
+    max-height: 920px;
+    margin: 0 calc((100vw - 1440px)/2);
     max-width: 1440px;
 }
 
-.service-item {
-    filter: invert(0.1);
+.services-header {
+    max-height: 350px;
+}
+
+.services-small-title {
+    font-size: 16px;
+}
+
+.services-messages {
+    padding: 64px 0;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    gap: 100px;
 }
 
-.service-item img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 8px;
+.services-big-message {
+    font-size: 32px;
+    color: var(--text-color);
+    text-align: left;
 }
 
-.service-item p {
-    font-weight: 600;
-    font-size: 13px;
+.services-message {
+    max-width: 500px;
 }
 
-.see-more-btn {
-    display: block;
-    margin: 48px auto 0;
-    padding: 8px 40px;
+.white {
+    font-size: 32px;
+    color: var(--white);
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    height: 520px;
+}
+
+.arrow {
     background: none;
-    border: 1px solid var(--text-color);
-    font-weight: 600;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
     cursor: pointer;
 }
 
+.indicators span.active {
+    background-color: #FCCC50;
+}
+
+.carousel {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.services-cards {
+    padding: 0 20px;
+    height: 500px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6, 260px);
+    grid-template-rows: repeat(2, 220px);
+    gap: 40px;
+    justify-content: start;
+    justify-items: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    cursor: grab;
+}
+
+.services-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    height: 220px;
+    width: 220px;
+    position: relative;
+    box-shadow: inset;
+}
+
+.service-image {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-title {
+    font-size: 12px;
+    color: var(--text-color);
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* TEAM SECTION */
+
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 117px calc((100vw - 1440px)/2);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-photo {
+    flex: 1;
+    width: 550px;
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-title {
+    font-size: 32px;
+}
+
+.yellow {
+    color: #FCCC50;
+}
+
+
+
 /* Responsive Design */
-
-/* @media (min-width: 1921px) {
-
-} */
 
 @media (max-width: 1503px) {
     .about {
@@ -224,8 +333,17 @@ span.highlight {
         padding: 0 32px;
     }
 
-}
+    .carousel {
+        width: 900px;
+        overflow: hidden;
+    }
 
+}
+@media (max-width: 1200px) {
+    .services-message {
+        display: none;
+    }
+}
 @media (max-width: 1024px) {
     .about-text {
         max-width: 600px;
@@ -243,6 +361,11 @@ span.highlight {
         grid-template-columns: repeat(4, 1fr);
         padding: 0;
         margin: 0;
+    }
+    
+    .carousel {
+        width: 600px;
+        overflow: hidden;
     }
 
 }
@@ -278,18 +401,48 @@ span.highlight {
         flex-direction: column;
     }
 
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .services-messages {
+        padding: 20px 0;
     }
 
-}
-
-@media (max-width: 482px) {
-
-    .services { 
-        padding: 20px 10px
+    .carousel-container {
+        height: 400px;
+        gap: 15px;
     }
-    .services-grid {
-        grid-template-columns: 1fr 1fr;
+
+    .carousel {
+        width: 100vw;
+        height: 380px;
+    }
+
+    .arrow {
+        font-size: 1rem;
+    }
+
+    .services-cards {
+        padding: 0;
+        grid-template-columns: repeat(6, 180px);
+        grid-template-rows: repeat(2, 180px);
+        gap: 10px;
+    }
+
+    .services-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .service-image {
+        height: 75px;
+        width: 75px;
+        top: 30px;
+    }
+
+    .service-title {
+        top: 120px;
+        width: 80%;
+    }
+    
+    .team {
+        padding: 20px;
     }
 }

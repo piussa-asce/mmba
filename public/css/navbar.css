@@ -30,7 +30,7 @@ nav {
     height: 35px;
     object-fit: cover;
     cursor: pointer;
-    transition: 0.35s;
+    object-fit: contain;
 }
 
 .sub-menu-logo {
@@ -79,7 +79,7 @@ nav {
     gap: 40px;
     align-items: center;
     font-family: Raleway;
-    color: var(--white);
+    color: white;
 }
 
 .nav-link {
@@ -89,10 +89,11 @@ nav {
     font-size: 16px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .nav-link:after {

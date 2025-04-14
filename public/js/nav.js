@@ -3,19 +3,21 @@ const subMenu = document.getElementById('submenu');
 const navLinks = document.getElementById('nav-links');
 const logo = document.getElementById('logo');
 
-if (window.scrollY > 30) {
+if (window.scrollY > 5) {
     navEl.classList.add('navbar-scroll');
+    navLinks.style.color = 'black';
+    logo.src = "svg/logo-black.svg"
 }
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 5) {
         navEl.classList.add('navbar-scroll');
-        navLinks.style.color = "black";
+        navLinks.style.color = 'black';
         logo.src = "svg/logo-black.svg"
     }
     else {
         navEl.classList.remove('navbar-scroll');
-        navLinks.style.color = "white";
+        navLinks.style.color = 'white';
         logo.src = "/svg/logo-white.svg"
     }
 });
