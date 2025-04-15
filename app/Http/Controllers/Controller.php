@@ -21,4 +21,12 @@ class Controller extends BaseController
     public function contacts() {
         return view('contacts');
     }
+
+    public function privacy() {
+        return view('privacy');
+    }
+
+    public function terms() {
+        return view('terms');
+    }
 }

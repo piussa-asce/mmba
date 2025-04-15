@@ -18,3 +18,5 @@ use App\Http\Controllers\Controller as DesktopController;
 Route::get('/', [DesktopController::class, 'home']);
 Route::get('/team', [DesktopController::class, 'team']);
 Route::get('/contacts', [DesktopController::class, 'contacts']);
+Route::get('/privacy', [DesktopController::class, 'privacy']);
+Route::get('/terms', [DesktopController::class, 'terms']);
