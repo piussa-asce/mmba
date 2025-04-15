@@ -7,54 +7,81 @@
 
   <title>Contactos</title>
 
-  <link rel="stylesheet" href="/css/contacts.css">
+  <link rel="stylesheet" href="/css/contact.css">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/footer.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/fonts.css">
 
 </head>
 
 <body>
-  <section class="contact-section">
-    <div class="contact-container">
-      <div class="contact-left">
-        <h1>Entre em contacto</h1>
-        <p class="firma-nome">
-          Medina Monteiro Bensimon <span class="advogados">Advogados</span>
-        </p>
-        <div class="map-embed">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.375737043887!2d-9.143830223717217!3d38.710595171758385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347a50c6a1c7%3A0xa6adf0c7ab5f4709!2sRua%20Garrett%2019%2C%201200-203%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1713196371507!5m2!1spt-PT!2spt"
-            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-      <div class="contact-right">
-        <div class="info-block">
-          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Morada" class="icon">
-          <div>
-            <h3>Morada</h3>
-            <p>Rua Garrett, n.º 19, 2ºC<br>1200-203 Lisboa, Portugal</p>
+  @include('navbar')
+  <main class="main">
+    <div class="container">
+      <section class="contact-section">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <h1 class="title">Entre em contacto</h1>
+            <div class="company-name">
+              <span class="company-text">MEDINA MONTEIRO </span>
+              <span class="company-text">BENSIMON </span>
+              <span class="company-highlight">ADVOGADOS </span>
+            </div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d389.1629926956701!2d-9.13997387553408!3d38.710830268706246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spt!4v1744738483933!5m2!1sen!2spt"
+                width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe> 
+
+              <!--
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.314070692973!2d-9.1422617!3d38.710846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331e0efc5f1b%3A0xb6579de5e351a2e2!2sLisbon!5e0!3m2!1sen!2spt!4v1611111111111"
+                width="100%" height="320px" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe> -->
+            </div>
           </div>
+          <grid>
+            <div class="contact-right">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <img src="/icons/location-1.svg" alt="Location" />
+                  </div>
+                  <div class="info">
+                    <h3>MORADA</h3>
+                    <p>Rua Garret, n.º 19, 2ºC<br>1200-203 Lisboa, Portugal</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="icon">
+                    <img src="/icons/mail.svg" alt="Email" />
+                  </div>
+                  <div class="info">
+                    <h3>EMAIL</h3>
+                    <a href="mailto:MMBADVOGADOS@GMAIL.COM">geral@mmba.pt</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="icon">
+                    <img src="/icons/phone-1.svg" alt="Phone" />
+                  </div>
+                  <div class="info">
+                    <h3>TELEFONE</h3>
+                    <p>(+351) 218 386 856</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </grid>
         </div>
-        <div class="info-block">
-          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" class="icon">
-          <div>
-            <h3>Email</h3>
-            <p>mmba.advogados@gmail.com</p>
-          </div>
-        </div>
-        <div class="info-block">
-          <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Telefone" class="icon">
-          <div>
-            <h3>Telefone</h3>
-            <p>(+351) ••• ••• •••</p>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </main>
+  @include('footer')
+  <script src="/js/nav.js" async defer></script>
 </body>
+
 </html>
