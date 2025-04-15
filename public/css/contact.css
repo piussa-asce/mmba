@@ -1,15 +1,36 @@
+:root {
+  --primary-color: #dcb443;
+  --secondary-color: #FFBB00;
+  --text-color: #000000;
+  --text-light: #00000066;
+  --white: #fff;
+  --yellow-bg: rgba(241, 182, 41, 0.4);
+  --ff: Raleway;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
 body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+.cont-grid {
   max-width: 1200px;
   margin: 0 auto;
   padding: 120px 20px;
-}
-
   display: flex;
   flex-direction: column;
   background: #fccc50 50%;
