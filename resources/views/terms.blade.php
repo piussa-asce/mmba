@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        @include('navbar')
+        @include('navbar-fixed')
         <main class="content-section">
             <h1>Termos e Condições de Utilização</h1>
 
