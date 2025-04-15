@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     width: 100vw;
-    height: 87px;
+    height: 75px;
     background-color: none;
     transition: all 0.35s;
 }
@@ -21,42 +21,8 @@ nav {
 }
 
 .navbar-scroll {
-    background-color: #111;
+    background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.contact-btn {
-    padding: 12px 40px;
-    border: 2px solid var(--white);
-    background: transparent;
-    color: var(--white);
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.35s;
-}
-
-.contact-btn:hover {
-    background-color: #fff;
-    border-color: #fff;
-    color: #000;
-}
-
-.contact-btn.dark {
-    padding: 12px 40px;
-    border: 2px solid #000;
-    background: transparent;
-    color: #000;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.35s;
-}
-
-.contact-btn.dark:hover {
-    background-color: #000;
-    border-color: #000;
-    color: #fff;
 }
 
 .logo {
@@ -64,6 +30,7 @@ nav {
     height: 35px;
     object-fit: cover;
     cursor: pointer;
+    object-fit: contain;
 }
 
 .sub-menu-logo {
@@ -111,16 +78,22 @@ nav {
     display: flex;
     gap: 40px;
     align-items: center;
+    font-family: Raleway;
+    color: white;
 }
 
 .nav-link {
     scroll-behavior: smooth;
-    color: var(--white);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .nav-link:after {

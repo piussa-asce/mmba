@@ -8,6 +8,7 @@
     <link href="css/home.css" rel="stylesheet" />
     <link href="css/navbar.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -33,32 +34,27 @@
             <p class="subtitle">PROPÓSITO, ESTRATÉGIA E COMPROMISSO</p>
             <h2>SOBRE NÓS</h2>
             <p>
-              CONSTRUÍMOS RELAÇÕES DE CONFIANÇA E OFERECEMOS SOLUÇÕES
-              JURÍDICAS ESTRATÉGICAS E PERSONALIZADAS.
+              Construímos relações de confiança e oferecemos soluções jurídicas estratégicas e personalizadas.
               <br /><br />
-              COM UMA EQUIPA EXPERIENTE E FOCADA NA ÉTICA E TRANSPARÊNCIA,
-              ATUAMOS EM DIVERSAS ÁREAS DO DIREITO, SEMPRE EM BUSCA DE
-              SOLUÇÕES INOVADORAS.
+              Com uma equipa experiente e focada na ética e transparência, atuamos em diversas áreas do direito, sempre em busca de soluções inovadoras.
               <br /><br />
-              SEJA NA PREVENÇÃO DE CONFLITOS, NA DEFESA DOS SEUS DIREITOS OU
-              NO PLANEAMENTO JURÍDICO EMPRESARIAL, GARANTIMOS A SEGURANÇA E
-              TRANQUILIDADE QUE PROCURA.
+              Seja na prevenção de conflitos, na defesa dos seus direitos ou no planeamento jurídico empresarial, garantimos a segurança que procura.
             </p>
 
             <div class="cards">
               <div class="card">
                 <h3>FOCO NO CLIENTE</h3>
                 <p>
-                  A NOSSA PRIORIDADE É COMPREENDER E ATENDER AS NECESSIDADES
-                  DOS NOSSOS CLIENTES
+                  A nossa prioridade é compreender e atender
+                  as necessidades dos nossos clientes
                 </p>
               </div>
 
               <div class="card">
                 <h3>EXCELENCIA</h3>
                 <p>
-                  COMPROMETEMO-NOS A OFERECER O MELHOR, COM DEDICAÇÃO E
-                  CUIDADO EM CADA DETALHE.
+                  Comprometemo-nos a oferecer o melhor, 
+                  com dedicação e cuidado em cada detalhe
                 </p>
               </div>
             </div>
@@ -66,98 +62,52 @@
             <button class="contact-btn dark" onclick="goTo('contacts')">FALE CONNOSCO</button>
           </div>
 
-          <div class="about-image">
-            <img class="rectangle top" alt="Rectangle" src="/home/rectangle-20.svg" />
-            <img class="rectangle bottom" alt="Rectangle" src="/home/rectangle-20.svg" />
-          </div>
+          <img src="/home/about_image.jpg" alt="" class="about-image">
+
         </div>
       </section>
       <!-- Services Section -->
+
       <section class="services" id="services">
         <div class="services-header">
-          <h2>OS NOSSOS SERVIÇOS</h2>
-          <p>
-            Priorizamos sempre a confiança, a clareza e a proximidade com os
-            nossos clientes.
-          </p>
+          <div class="services-messages">
+            <div class="title">
+              <p class="services-small-title">SERVIÇOS</p>
+              <h2 class="services-big-message">APOIO JURÍDICO DE <span class="white">CONFIANÇA</span>,</h2>
+              <br>
+              <h2 class="services-big-message">À MEDIDA DAS SUAS NECESSIDADES </h2>
+            </div>
+            <p class="services-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
         </div>
-
-        <div class="services-grid" id="servicesGrid"></div>
-
-        <button class="contact-btn dark" onclick="goTo('services')">VER MAIS</button>
+        <div class="carousel-container">
+          <img src="/svg/home/left.svg" class="arrow left"></img>  
+          <div class="carousel">
+            <div class="services-cards" id="services-cards">
+              <!-- dynamically filled -->
+            </div>
+          </div>
+          <img src="/svg/home/right.svg" class="arrow right"></img>
+          <div class="indicators" id="indicators"></div>
+        </div>
       </section>
+
+      <section class="team">
+        <img src="/home/team_photo.jpg" alt="team photo" class="team-photo">
+        <div class="text">
+          <h2 class="text-title">CONFIANÇA, RIGOR E <span class="yellow">COMPROMISSO</span></h2>
+          <p class="yellow">Mais do que advogados, somos parceiros nas decisões que moldam o seu futuro.</p>
+          <p>Com diferentes percursos e áreas de especialização, a nossa equipa combina conhecimento técnico com uma visão estratégica e humana do Direito.</p>
+          <p>Trabalhamos em conjunto para garantir  soluções sólidas, personalizadas e orientadas para resultados reais.</p>
+          <button class="contact-btn dark" onclick="goTo('team')">SABER MAIS</button>
+        </div>
+      </section>
+
+
       @include('footer')
     </div>
 
-    <script>
-
-        // Services data
-        const services = [
-        {
-            title: "SERVIÇOS JURÍDICOS",
-            icon: "/home/scales-of-justice-1.png",
-            alt: "Scales of justice",
-        },
-        {
-            title: "DIREITO ADMINISTRATIVO",
-            icon: "/home/regulation-1.png",
-            alt: "Regulation",
-        },
-        {
-            title: "CONTRATAÇÃO PÚBLICA",
-            icon: "/home/suitcase-1.png",
-            alt: "Suitcase",
-        },
-        {
-            title: "DIREITO DA FAMÍLIA",
-            icon: "/home/family-1.png",
-            alt: "Family",
-        },
-        {
-            title: "ARBITRAGENS",
-            icon: "/home/handshake-1.png",
-            alt: "Handshake",
-        },
-        {
-            title: "DIREITO IMOBILIÁRIO",
-            icon: "/home/home-1.png",
-            alt: "Home",
-        },
-        {
-            title: "DIREITO CIVIL",
-            icon: "/home/court-1.png",
-            alt: "Court",
-        },
-        {
-            title: "DIREITO PENAL",
-            icon: "/home/law-book-1.png",
-            alt: "Law book",
-        },
-        ];
-
-        // Populate services grid
-        function populateServices() {
-            const servicesGrid = document.getElementById('servicesGrid');
-            
-            services.forEach(service => {
-                const serviceItem = document.createElement('div');
-                serviceItem.className = 'service-item';
-                
-                serviceItem.innerHTML = `
-                <img src="${service.icon}" alt="${service.alt}" />
-                <p>${service.title}</p>
-                `;
-                
-                servicesGrid.appendChild(serviceItem);
-            });
-        }
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', () => {
-            populateServices();
-        });
-        
-    </script>
+    <script src="/js/home.js" async defer></script>
     <script src="/js/nav.js" async defer></script>
   </body>
 </html>
