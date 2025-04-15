@@ -1,3 +1,30 @@
+:root {
+  --primary-color: #dcb443;
+  --secondary-color: #FFBB00;
+  --text-color: #000000;
+  --text-light: #00000066;
+  --white: #fff;
+  --yellow-bg: rgba(241, 182, 41, 0.4);
+  --ff: Raleway;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+body {
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .content-section {
   max-width: 1000px;
   margin: 60px auto;

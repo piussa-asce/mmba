@@ -13,30 +13,28 @@
     </head>
     <body>
         @include('navbar')
-        <!-- Page Title -->
-        <div class="page-title">
-          <h1>EQUIPA</h1>
-        </div>
-
+            
         <!-- Hero Section -->
         <section class="hero-section">
-          <div class="hero-title">
-            <h2>
-              <span>Unidos pela </span>
-              <span class="highlight">excelência</span>,<br>
-              <span>comprometidos com o</span><br>
-              <span>sucesso.</span>
-            </h2>
-          </div>
-          <div class="hero-quote">
-            <p>
-              "A nossa equipa é formada por profissionais experientes e
-              dedicados, que trabalham em conjunto para oferecer
-              soluções jurídicas eficazes e inovadoras. Acreditamos que a
-              excelência vem do trabalho em equipa e do compromisso com os
-              nossos clientes."
-            </p>
-          </div>
+          <h3>EQUIPA</h3>
+          <div class="hero">
+              <div class="hero-title">
+                    <h1>
+                      <span>UNIDOS PELA </span>
+                      <span class="highlight">EXCELÊNCIA</span>,<br>
+                      <span>COMPROMETIDOS COM O SUCESSO.</span>
+                    </h1>
+                </div>
+                <div class="hero-quote">
+                    <p>
+                        "A nossa equipa é formada por profissionais experientes e
+                        dedicados, que trabalham em conjunto para oferecer
+                        soluções jurídicas eficazes e inovadoras. Acreditamos que a
+                        excelência vem do trabalho em equipa e do compromisso com os
+                        nossos clientes."
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="people">
@@ -61,7 +59,7 @@
                 {
                     id: 2,
                     name: "Dafne Bensimon",
-                    title: "Advogado, Lisboa",
+                    title: "Advogada, Lisboa",
                     description:
                     "Advogada com um percurso marcado por uma prática consistente e internacional, fundou a MMBA em 2025. Tem experiência consolidada em Direito Imobiliário, Direito dos Estrangeiros, Nacionalidade e Direito Administrativo. Acompanha de perto transações e projetos imobiliários de distintas naturezas, com uma abordagem cuidadosa e eficaz.",
                     quote:
@@ -94,7 +92,7 @@
                 {
                     id: 5,
                     name: "Inês Kol de Carvalho",
-                    title: "Advogado, Lisboa",
+                    title: "Advogada, Lisboa",
                     description:
                     "Com uma carreira marcada pela versatilidade e experiência multidisciplinar, Inês integrou a MMBA em 2025. Desenvolve a sua prática nas áreas de Direito Imobiliário, Contencioso Civil, Direito dos Estrangeiros, Direito da Família e Nacionalidade, acompanhando com rigor técnico diversas transações e processos complexos.",
                     quote:
@@ -109,7 +107,7 @@
                     description:
                     "",
                     quote:
-                    '""',
+                    '',
                     image: "/people/image-margarida-people.png",
                     imagePosition: "right",
                 },
@@ -134,10 +132,10 @@
                                     src="${member.image}"
                                 />
                                 <div class="member-info">
-                                    <h3>${member.name}</h3>
+                                    <h2>${member.name}</h2>
                                     <p class="member-title">${member.title}</p>
                                     <p class="member-description">${member.description}</p>
-                                    <hr class="separator" />
+                                    <hr class="line" />
                                     <p class="member-quote">${member.quote}</p>
                                 </div>
                             </div>
@@ -146,10 +144,10 @@
                         teamCard.innerHTML = `
                             <div class="team-content ${member.imagePosition}">
                                 <div class="member-info">
-                                    <h3>${member.name}</h3>
+                                    <h2>${member.name}</h2>
                                     <p class="member-title">${member.title}</p>
                                     <p class="member-description">${member.description}</p>
-                                    <hr class="separator" />
+                                    <hr class="line" />
                                     <p class="member-quote">${member.quote}</p>
                                 </div>
                                 <img

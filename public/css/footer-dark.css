@@ -4,14 +4,14 @@
     --text-color-footer: #dcb443;
     --text-light: grey;
     --white: #ffffff;
-    --black: #000000;
+    --black: #111;
     --yellow-bg: rgba(241, 182, 41, 0.4);
 }
 
 /* Footer */
 footer {
     background: var(--black);
-    padding: 64px calc((100vw - 1440px)/2) 32px;
+    padding: 64px 0 32px;
 }
 
 .footer-content {
@@ -38,17 +38,17 @@ footer {
 }
 
 .contact-info h3 {
+    color: #dcb443;
     font-weight: 700;
     margin-bottom: 4px;
 }
 
 .contact-info a {
-    color: #dcb443;
+    color: white;
     text-decoration: underline;
 }
 
 .contact-info p {
-    color: #dcb443;
     width: 200px;
 }
 

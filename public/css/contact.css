@@ -10,7 +10,6 @@ body {
   padding: 120px 20px;
 }
 
-.contact-section {
   display: flex;
   flex-direction: column;
   background: #fccc50 50%;

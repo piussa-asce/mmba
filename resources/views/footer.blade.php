@@ -2,7 +2,7 @@
 <footer>
     <div class="footer-content">
         <div class="footer-logo" onclick="goTo('logo')">
-            <img alt="MMBA Logo" src="logo-black.png" />
+            <img alt="MMBA Logo" src="/svg/logo-black.svg" />
             <p>
                 <span>MEDINA MONTEIRO</span>
                 <span>BENSIMON</span>

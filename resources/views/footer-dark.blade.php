@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-logo" onclick="goTo('hero')">
-            <img alt="MMBA Logo" src="logo.png" />
+            <img alt="MMBA Logo" src="/svg/logo-white.svg" />
             <p>
                 <span>MEDINA MONTEIRO </span>
                 <span>BENSIMON </span>
