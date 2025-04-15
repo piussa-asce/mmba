@@ -9,8 +9,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: var(--ff);
 }
@@ -27,7 +25,7 @@ body {
 
 .content-section {
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 150px auto;
   padding: 0 20px;
   font-family: "Inter", sans-serif;
   line-height: 1.7;

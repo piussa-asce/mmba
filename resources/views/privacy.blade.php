@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        @include('navbar')
+        @include('navbar-fixed')
 
         <div class="page-title">
             <h1>Política de Tratamento de Dados Pessoais</h1>

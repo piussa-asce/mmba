@@ -47,13 +47,3 @@ function goTo(id) {
     if (id == "services") window.location.href = "/services";   
     if (subMenu.style.display == 'flex') subMenu.style.display = 'none';
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-    let path = window.location.pathname;
-    console.log(path);
-    if (path == "/privacy" || path == "/terms" || path == "/contacts") {
-        navEl.classList.add('navbar-scroll');
-        navLinks.style.color = 'black';
-        logo.src = "svg/logo-black.svg"
-    }
-});
