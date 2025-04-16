@@ -5,13 +5,13 @@
     left: 0;
     top: 0;
     width: 100vw;
-    height: 75px;
+    height: 4.6875rem;
     background-color: none;
     transition: all 0.35s;
 }
 
 nav {
-    padding: 20px calc((100vw - 1440px)/2);
+    padding: 1.25rem calc((100vw - 90rem)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,12 +22,12 @@ nav {
 
 .navbar-scroll {
     background-color: white;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 .1875rem .625rem rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-    width: 200px;
-    height: 35px;
+    width: 12.5rem;
+    height: 2.1875rem;
     object-fit: cover;
     cursor: pointer;
     object-fit: contain;
@@ -51,31 +51,32 @@ nav {
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    gap: 20px;
-    padding: 100px 0 20px 0px;
+    gap: 1.25rem;
+    padding: 6.25rem 0 1.25rem 0rem;
 }
 
 .sub-menu * {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .back {
     position: absolute;
-    right: 31px;
-    top: 13px;
+    right: 1.9375rem;
+    top: .8125rem;
 }
 
 .submenu-button {
-    width: 150px;
+    width: 9.375rem;
     text-align: center;
-    padding: 10px 0px;
-    font-size: 24px;
+    padding: .625rem 0rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    color: black;
 }
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     align-items: center;
     font-family: Raleway;
     color: white;
@@ -85,7 +86,7 @@ nav {
     scroll-behavior: smooth;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -100,8 +101,8 @@ nav {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
-    bottom: -3px;
+    height: .125rem;
+    bottom: -.1875rem;
     left: 0;
     background-color: #fdba00;
     transition: transform 0.35s ease-out;
@@ -113,13 +114,13 @@ nav {
     transform-origin: bottom left;
 }
 
-@media (max-width: 1503px) {
+@media (max-width: 93.9375rem) {
     nav {
-        padding: 20px 32px;
+        padding: 1.25rem 2rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .nav-links {
         display: none;
     }
@@ -128,10 +129,10 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     nav {
         flex-direction: row;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .nav-links {

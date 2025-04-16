@@ -35,8 +35,8 @@
             Copyright 2025 © MMBA Advogados, Todos os direitos reservados.
         </p>
         <div class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Política de Privacidade</a>
+            <a href="/terms">Termos e Serviços</a>
         </div>
     </div>
 </footer>
