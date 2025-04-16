@@ -41,7 +41,7 @@
                 <div class="contact-info">
                   <div class="contact-item">
                     <div class="icon">
-                      <img src="/icons/location-1.svg" alt="Location" />
+                      <img src="/icons/location.svg" alt="Location" />
                     </div>
                     <div class="info">
                       <h3>MORADA</h3>
@@ -61,7 +61,7 @@
 
                   <div class="contact-item">
                     <div class="icon">
-                      <img src="/icons/phone-1.svg" alt="Phone" />
+                      <img src="/icons/phone.svg" alt="Phone" />
                     </div>
                     <div class="info">
                       <h3>TELEFONE</h3>

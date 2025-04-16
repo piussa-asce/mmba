@@ -9,7 +9,6 @@
 }
 
 * {
-  margin: 0;
   box-sizing: border-box;
   font-family: var(--ff);
 }
@@ -129,9 +128,9 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 56.25rem) {
+@media (max-width: 48rem) {
   .contact-grid {
-    flex-direction: column;
+    flex-direction: row;
     gap: 2.5rem;
   }
 
@@ -150,9 +149,5 @@ body {
 
   .contact-section {
     padding: 2.5rem 1.25rem;
-  }
-
-  .contact-right {
-    padding-bottom: 0;
   }
 }
