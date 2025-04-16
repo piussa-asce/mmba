@@ -75,8 +75,8 @@
         </section>
       </div>
     </main>
-    @include('footer')
   </div>
+  @include("footer")
   <script src="/js/nav.js" async defer></script>
 </body>
 

@@ -9,6 +9,7 @@
 }
 
 * {
+  margin: 0;
   box-sizing: border-box;
   font-family: var(--ff);
 }
@@ -18,23 +19,23 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 120rem;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .main {
-  margin-top: 150px;
+  margin-top: 9.375rem;
 }
 
 .cont-grid {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 7.5rem 1.25rem;
   display: flex;
   flex-direction: column;
   background: #fccc50 50%;
-  padding: 60px;
+  padding: 3.75rem;
 }
 
 .contact-grid {
@@ -42,28 +43,28 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: nowrap;
-  gap: 60px;
-  max-width: 1200px;
+  gap: 3.75rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
 .contact-left {
   flex: 1;
-  min-width: 500px;
+  min-width: 31.25rem;
   text-align: left;
 }
 
 .title {
-  font-size: 42px;
-  margin-bottom: 20px;
+  font-size: 2.625rem;
+  margin-bottom: 1.25rem;
   font-weight: bold;
   text-align: left;
 }
 
 .company-name {
   font-weight: 600;
-  font-size: 16px;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
   text-align: left;
 }
 
@@ -73,52 +74,52 @@ body {
 
 .map-container {
   width: 100%;
-  height: 320px;
-  border-radius: 10px;
+  height: 20rem;
+  border-radius: .625rem;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 .contact-right {
   flex: 1;
-  min-width: 320px;
+  min-width: 20rem;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   width: 100%;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: .9375rem;
   text-align: left;
 }
 
 .icon img {
-  width: 28px;
-  height: 28px;
-  margin-top: 4px;
-  stroke-width: 5px;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: .25rem;
+  stroke-width: .3125rem;
 }
 
 .info h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .0625rem;
 }
 
 .info p,
 .info a {
-  margin: 8px 0 0;
-  font-size: 16px;
+  margin: .5rem 0 0;
+  font-size: 1rem;
   color: #333;
   text-decoration: none;
 }
@@ -128,10 +129,10 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .contact-grid {
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .contact-left,
@@ -140,15 +141,15 @@ body {
   }
 
   .map-container {
-    height: 280px;
+    height: 17.5rem;
   }
 
   .container {
-    padding: 60px 20px;
+    padding: 3.75rem 1.25rem;
   }
 
   .contact-section {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
   }
 
   .contact-right {

@@ -20,31 +20,31 @@ body {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 120rem;
     margin: 0 auto;
     overflow: hidden;
 }
 
 /* Hero Section */
 .hero {
-    padding: 0 calc((100vw - 1440px)/2);
+    padding: 0 calc((100vw - 90rem)/2);
     position: relative;
     width: 100%;
-    height: 920px;
+    height: 57.5rem;
     background-image: url('/home/hero.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .contact-btn {
-    padding: 12px 40px;
-    border: 2px solid var(--white);
+    padding: .75rem 2.5rem;
+    border: .125rem solid var(--white);
     background: transparent;
     color: var(--white);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 17px;
+    border-radius: 1.0625rem;
 }
 
 .contact-btn.dark {
@@ -54,23 +54,23 @@ body {
 
 .hero-content {
     position: absolute;
-    top: 300px;
-    max-width: 1440px;
-    min-width: 500px;
+    top: 18.75rem;
+    max-width: 90rem;
+    min-width: 31.25rem;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    font-size: 55px;
+    font-size: 3.4375rem;
     font-weight: 500;
 }
 
 .hero-text span {
     color: var(--white);
-    margin-bottom: 24px;
-    line-height: 30px;
-    letter-spacing: 0.61px;
+    margin-bottom: 1.5rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.3.8125rem;
 }
 
 span.highlight {
@@ -78,117 +78,117 @@ span.highlight {
 }
 
 .hero-quote {
-    margin: 16px 0 25px 0;
+    margin: 1rem 0 1.5625rem 0;
     color: var(--white);
     font-weight: 500;
 }
 
 /* About Section */
 .about {
-    padding: 117px calc((100vw - 1440px)/2);
+    padding: 7.3125rem calc((100vw - 90rem)/2);
     background: var(--white);
 }
 
 .subtitle {
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .about-text {
-    max-width: 900px;
+    max-width: 56.25rem;
 }
 
 .about-text h2 {
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--primary-color);
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .cards {
     display: flex;
-    gap: 16px;
-    margin: 40px 0;
+    gap: 1rem;
+    margin: 2.5rem 0;
 }
 
 .card {
     flex: 1;
-    max-width: 416px;
+    max-width: 26rem;
 }
 
 .card h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .about-image {
     position: relative;
-    min-width: 333px;
-    height: 500px;
+    min-width: 20.8125rem;
+    height: 31.25rem;
 }
 
 .rectangle {
     position: absolute;
-    width: 95px;
-    height: 65px;
+    width: 5.9375rem;
+    height: 4.0625rem;
 }
 
 .rectangle.top {
-    top: -1px;
-    left: -1px;
+    top: -.0625rem;
+    left: -.0625rem;
 }
 
 .rectangle.bottom {
-    bottom: -1px;
-    right: -1px;
+    bottom: -.0625rem;
+    right: -.0625rem;
 }
 
 /* Services Section */
 .services {
     background: linear-gradient(to bottom, #FCCC50 50%, white 50%);
-    max-height: 920px;
-    margin: 0 calc((100vw - 1440px)/2);
-    max-width: 1440px;
+    max-height: 57.5rem;
+    margin: 0 calc((100vw - 90rem)/2);
+    max-width: 90rem;
 }
 
 .services-header {
-    max-height: 350px;
+    max-height: 21.875rem;
 }
 
 .services-small-title {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .services-messages {
-    padding: 64px 0;
+    padding: 4rem 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .services-big-message {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--text-color);
     text-align: left;
 }
 
 .services-message {
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 
 .white {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--white);
 }
 
@@ -196,12 +196,12 @@ span.highlight {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 90rem;
     margin: auto;
-    height: 520px;
+    height: 32.5rem;
 }
 
 .arrow {
@@ -214,18 +214,18 @@ span.highlight {
 
 .indicators {
     text-align: center;
-    margin-top: 10px;
+    margin-top: .625rem;
     position: absolute;
-    bottom: -20px;
+    bottom: -1.25rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .indicators span {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 4px;
+    width: .75rem;
+    height: .75rem;
+    margin: 0 .25rem;
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
@@ -236,18 +236,18 @@ span.highlight {
 }
 
 .carousel {
-    width: 1200px;
+    width: 75rem;
     overflow: hidden;
 }
 
 .services-cards {
-    padding: 0 20px;
-    height: 500px;
-    max-width: 1200px;
+    padding: 0 1.25rem;
+    height: 31.25rem;
+    max-width: 75rem;
     display: grid;
-    grid-template-columns: repeat(6, 260px);
-    grid-template-rows: repeat(2, 220px);
-    gap: 40px;
+    grid-template-columns: repeat(6, 16.25rem);
+    grid-template-rows: repeat(2, 13.75rem);
+    gap: 2.5rem;
     justify-content: start;
     justify-items: center;
     margin: 0 auto;
@@ -256,28 +256,28 @@ span.highlight {
 }
 
 .services-card {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 .25rem .625rem rgba(0, 0, 0, 0.25);
     background-color: white;
-    height: 220px;
-    width: 220px;
+    height: 13.75rem;
+    width: 13.75rem;
     position: relative;
     box-shadow: inset;
 }
 
 .service-image {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     position: absolute;
-    top: 50px;
+    top: 3.125rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .service-title {
-    font-size: 12px;
+    font-size: .75rem;
     color: var(--text-color);
     position: absolute;
-    top: 140px;
+    top: 8.75rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -291,15 +291,15 @@ span.highlight {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 117px calc((100vw - 1440px)/2);
+    padding: 7.3125rem calc((100vw - 90rem)/2);
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 .team-photo {
     flex: 1;
-    width: 550px;
+    width: 34.375rem;
 }
 
 .text {
@@ -308,11 +308,11 @@ span.highlight {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .text-title {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .yellow {
@@ -323,38 +323,38 @@ span.highlight {
 
 /* Responsive Design */
 
-@media (max-width: 1503px) {
+@media (max-width: 93.9375rem) {
     .about {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .hero {
-        padding: 0 32px;
+        padding: 0 2rem;
     }
 
     .carousel {
-        width: 900px;
+        width: 56.25rem;
         overflow: hidden;
     }
 
 }
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
     .services-message {
         display: none;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
     .about-text {
-        max-width: 600px;
+        max-width: 37.5rem;
     }
     
     .hero-content {
-        left: 32px;
+        left: 2rem;
     }
 
     .services {
-        padding: 20px 0;
+        padding: 1.25rem 0;
     }
 
     .services-grid {
@@ -364,15 +364,15 @@ span.highlight {
     }
     
     .carousel {
-        width: 600px;
+        width: 37.5rem;
         overflow: hidden;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .about {
-        padding: 32px 20px;
+        padding: 2rem 1.25rem;
     }
 
     .services {
@@ -380,13 +380,13 @@ span.highlight {
     }
 
     .hero-content {
-        padding: 0 32px;
+        padding: 0 2rem;
         left: 0;
-        min-width: 300px;
+        min-width: 18.75rem;
     }
 
     .hero-text {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     
     .about-content {
@@ -402,17 +402,17 @@ span.highlight {
     }
 
     .services-messages {
-        padding: 20px 0;
+        padding: 1.25rem 0;
     }
 
     .carousel-container {
-        height: 400px;
-        gap: 15px;
+        height: 25rem;
+        gap: .9375rem;
     }
 
     .carousel {
         width: 100vw;
-        height: 380px;
+        height: 23.75rem;
     }
 
     .arrow {
@@ -421,28 +421,28 @@ span.highlight {
 
     .services-cards {
         padding: 0;
-        grid-template-columns: repeat(6, 180px);
-        grid-template-rows: repeat(2, 180px);
-        gap: 10px;
+        grid-template-columns: repeat(6, 11.25rem);
+        grid-template-rows: repeat(2, 11.25rem);
+        gap: .625rem;
     }
 
     .services-card {
-        width: 180px;
-        height: 180px;
+        width: 11.25rem;
+        height: 11.25rem;
     }
 
     .service-image {
-        height: 75px;
-        width: 75px;
-        top: 30px;
+        height: 4.6875rem;
+        width: 4.6875rem;
+        top: 1.875rem;
     }
 
     .service-title {
-        top: 120px;
+        top: 7.5rem;
         width: 80%;
     }
     
     .team {
-        padding: 20px;
+        padding: 1.25rem;
     }
 }

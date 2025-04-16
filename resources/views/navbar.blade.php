@@ -1,7 +1,7 @@
 <section id="navbar" class="">
     <nav>
         <img id="logo" class="logo" alt="MMBA Logo" src="/svg/logo-white.svg" onclick="goTo('logo')"/>
-        <img class="sub-menu-logo" src="/burger.svg" onclick="toggleSubMenu(true)"/> <!-- appears after 1000px -->
+        <img class="sub-menu-logo" src="/burger.svg" onclick="toggleSubMenu(true)"/> <!-- appears after 62.5rem -->
         <div class="nav-links" id="nav-links">
             <a class="nav-link" onclick="goTo('#about')">SOBRE NÓS</a>
             <a class="nav-link" onclick="goTo('team')">EQUIPA</a>
