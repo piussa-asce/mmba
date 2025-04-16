@@ -1,5 +1,6 @@
 const navEl = document.getElementById('navbar');
 const subMenu = document.getElementById('submenu');
+const subMenuLogo = document.getElementById('sub-menu-logo');
 const navLinks = document.getElementById('nav-links');
 const logo = document.getElementById('logo');
 
@@ -7,6 +8,7 @@ if (window.scrollY > 5) {
     navEl.classList.add('navbar-scroll');
     navLinks.style.color = 'black';
     logo.src = "svg/logo-black.svg"
+    subMenuLogo.src = "svg/burger-black.svg"
 }
 
 window.addEventListener('scroll', () => {
@@ -16,11 +18,15 @@ window.addEventListener('scroll', () => {
         navEl.classList.add('navbar-scroll');
         navLinks.style.color = 'black';
         logo.src = "svg/logo-black.svg"
+        subMenuLogo.src = "svg/burger-black.svg"
+
     }
     else {
         navEl.classList.remove('navbar-scroll');
         navLinks.style.color = 'white';
         logo.src = "/svg/logo-white.svg"
+        subMenuLogo.src = "svg/burger.svg"
+        
     }
 });
 

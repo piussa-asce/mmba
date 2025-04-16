@@ -89,6 +89,12 @@ let totalSlides = Math.ceil(totalItems / columnsPerSlide);
     indicators.appendChild(dot);
 }
 
+function getItemsPerSlide() {
+    const containerWidth = track.parentElement.offsetWidth;
+    const itemWidth = 300; // or get this dynamically if needed
+    return Math.floor(containerWidth / itemWidth);
+}
+
 const updateIndicators = () => {
     indicators.querySelectorAll('span').forEach((dot, i) => {
       dot.classList.toggle('active', i === currentColumn);
@@ -98,7 +104,10 @@ const updateIndicators = () => {
 const goToSlide = (index) => {
     currentColumn = index;
     let offset;
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 540) {
+        offset = -index * 215;
+    }
+    else if (window.innerWidth <= 768) {
         offset = -index * 375;
     }
     else if (window.innerWidth <= 1503) {

@@ -16,16 +16,12 @@
       <!-- Hero Section -->
       <section class="hero" id="hero">
         <div class="hero-content">
-          <div class="hero-text">
-            <span>MEDINA MONTEIRO</span>
-            <span>BENSIMON</span>
-            <span class="highlight">ADVOGADOS</span>
-          </div>
-          <!-- <p class="hero-quote">"A DEMOCRACIA VAI PARA ALÉM DO DIREITO"</p> -->
-          <button class="contact-btn " onclick="goTo('contacts')">FALE CONNOSCO</button>
-        </div> 
+          <p>MEDINA MONTEIRO</p>
+          <p>BENSIMON</p>
+          <p class="highlighted">ADVOGADOS</p>
+          <button class="contact-btn" onclick="goTo('contacts')">FALE CONNOSCO</button>
+        </div>
       </section>
-
       <!-- About Us Section -->
       <section class="about" id="about">
           
@@ -69,15 +65,11 @@
       <!-- Services Section -->
 
       <section class="services" id="services">
-        <div class="services-header">
-          <div class="services-messages">
-            <div class="title">
-              <p class="services-small-title">SERVIÇOS</p>
-              <h2 class="services-big-message">APOIO JURÍDICO DE <span class="white">CONFIANÇA</span>,</h2>
-              <br>
-              <h2 class="services-big-message">À MEDIDA DAS SUAS NECESSIDADES </h2>
-            </div>
-            <p class="services-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="services-messages">
+          <div class="title">
+            <p class="services-small-title">SERVIÇOS</p>
+            <h2 class="services-big-message">APOIO JURÍDICO DE <span class="services-big-message white">CONFIANÇA</span>,</h2>
+            <h2 class="services-big-message">À MEDIDA DAS SUAS NECESSIDADES </h2>
           </div>
         </div>
         <div class="carousel-container">
