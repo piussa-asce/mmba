@@ -22,6 +22,7 @@
         <section class="contac-section">
           <div class="contac-grid">
             <div class="contac-left">
+              <p class="subtitle">CONTACTOS</p>
               <h1 class="title">Entre em contacto</h1>
               <div class="company-name">
                 <span class="company-text">MEDINA MONTEIRO </span>

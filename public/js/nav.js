@@ -7,8 +7,8 @@ const logo = document.getElementById('logo');
 if (window.scrollY > 5) {
     navEl.classList.add('navbar-scroll');
     navLinks.style.color = 'black';
-    logo.src = "svg/logo-black.svg"
-    subMenuLogo.src = "svg/burger-black.svg"
+    logo.src = "/svg/logo-black.svg"
+    subMenuLogo.src = "/svg/burger-black.svg"
 }
 
 window.addEventListener('scroll', () => {
