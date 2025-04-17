@@ -477,6 +477,10 @@ body {
         padding: 0;
     }
 
+    .services-small-title {
+        font-weight: 400;
+    }
+
     .services-cards {
         padding: 0;
         grid-template-columns: repeat(6, 11.25rem);
@@ -565,7 +569,6 @@ body {
     }
 
     .service-title {
-
         top: 4rem;
         width: 97%;
         padding: 0 0.1875rem;
