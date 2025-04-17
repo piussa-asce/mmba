@@ -561,12 +561,12 @@ body {
     .service-image {
         height: 2.8125rem;
         width: 2.8125rem;
-        top: 1.125rem;
+        top: 0.725rem;
     }
 
     .service-title {
 
-        top: 4.375rem;
+        top: 4rem;
         width: 97%;
         padding: 0 0.1875rem;
         font-size: 0.55rem;
