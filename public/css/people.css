@@ -199,6 +199,12 @@ img.social-link {
     padding: 0 1.875rem;
   }
 
+  .hero {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+
   .hero-title,
   .hero-quote {
     width: 100%;
@@ -221,6 +227,11 @@ img.social-link {
     width: 100%;
     padding: 0;
     text-align: center !important;
+  }
+
+  .member-image {
+    padding: 0;
+    margin: 0 auto;
   }
 
   .footer {

@@ -50,7 +50,7 @@
             {
                 id: 1,
                 name: "Bruno Medina Monteiro",
-                title: "Advogado, Lisboa",
+                title: "Advogado",
                 description:
                     "O advogado iniciou o seu percurso profissional há mais de 20 anos, tendo fundado a MMBA em 2025 após uma sólida experiência em várias sociedades de advogados. Desenvolve a sua prática sobretudo nas áreas de Direito Administrativo, Contratação Pública, Empreitadas Públicas e Privadas, Arbitragens e Direito Imobiliário.",
                 quote:
@@ -63,7 +63,7 @@
             {
                 id: 2,
                 name: "Dafne Bensimon",
-                title: "Advogada, Lisboa",
+                title: "Advogada",
                 description:
                     "Advogada com um percurso marcado por uma prática consistente e internacional, fundou a MMBA em 2025. Tem experiência consolidada em Direito Imobiliário, Direito dos Estrangeiros, Nacionalidade e Direito Administrativo. Acompanha de perto transações e projetos imobiliários de distintas naturezas, com uma abordagem cuidadosa e eficaz.",
                 quote:
@@ -76,7 +76,7 @@
             {
                 id: 3,
                 name: "Tomás da Silva Freitas",
-                title: "Advogado, Lisboa",
+                title: "Advogado",
                 description:
                     "Licenciado em Direito e com formação avançada em Corporate Finance, iniciou a sua prática na advocacia em 2023. Colabora com a MMBA com especial enfoque nas áreas de Direito Societário, Direito Comercial e Direito Penal, trazendo uma abordagem analítica e determinada aos desafios jurídicos.",
                 quote:
@@ -89,7 +89,7 @@
             {
                 id: 4,
                 name: "André da Silva Freitas",
-                title: "Advogado, Lisboa",
+                title: "Advogado",
                 description:
                     "Advogado desde 2024, com formação pela Faculdade de Direito da Universidade de Lisboa. Traz para a MMBA uma prática focada no Direito Civil e no Direito da Família e Sucessões, exercendo com rigor, proximidade e profundo respeito pelas dimensões humanas de cada caso.",
                 quote:
@@ -97,12 +97,12 @@
                 image: "/people/image-andre-people.png",
                 imagePosition: "right",
                 linkedin: "https://www.linkedin.com/in/andr%C3%A9-silva-freitas-7339b62b1/",
-                cv: "###########",
+                cv: "#",
             },
             {
                 id: 5,
                 name: "Inês Kol de Carvalho",
-                title: "Advogada, Lisboa",
+                title: "Advogada",
                 description:
                     "Com uma carreira marcada pela versatilidade e experiência multidisciplinar, Inês integrou a MMBA em 2025. Desenvolve a sua prática nas áreas de Direito Imobiliário, Contencioso Civil, Direito dos Estrangeiros, Direito da Família e Nacionalidade, acompanhando com rigor técnico diversas transações e processos complexos.",
                 quote:
@@ -115,9 +115,9 @@
             {
                 id: 6,
                 name: "Margarida Barros",
-                title: "Assistente Administrativa, Lisboa",
+                title: "Assistente Administrativa",
                 description:
-                    "",
+                    "Responsável pelos serviços administrativos e recursos humanos. Integrou a equipa de advogados em 2017, assumindo desde então um papel fundamental no apoio à gestão interna e ao bom funcionamento do escritório.",
                 quote:
                     '',
                 image: "/people/image-margarida-people.png",

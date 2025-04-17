@@ -12,7 +12,7 @@
         <div class="footer-info">
             <div class="contact-info">
                 <h3>MORADA</h3>
-                <p>Rua Garret, n.º 19, 2ºC<br />1200-203 Lisboa, Portugal</p>
+                <p>Rua Garrett, n.º 19, 2ºC<br />1200-203 Lisboa, Portugal</p>
             </div>
 
             <div class="contact-info">
@@ -31,7 +31,7 @@
 
     <div class="footer-bottom">
         <p class="copyright">
-            Copyright 2025 © MMBA Advogados, Todos os direitos reservados.
+            Copyright 2025 © Todos os direitos reservados.
         </p>
         <div class="footer-links">
             <a href="/privacy">Política de Privacidade</a>

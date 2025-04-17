@@ -45,7 +45,7 @@
                     </div>
                     <div class="info">
                       <h3>MORADA</h3>
-                      <p>Rua Garret, n.º 19, 2ºC<br>1200-203 Lisboa, Portugal</p>
+                      <p>Rua Garrett, n.º 19, 2ºC<br>1200-203 Lisboa, Portugal</p>
                     </div>
                   </div>
 

@@ -405,12 +405,17 @@ body {
         padding: 2rem 1.25rem;
     }
 
+    .about-subtitle {
+        flex-direction: column;
+    }
+
     .hero-content {
         left: 50%;
         transform: translateX(-50%);
         top: 8.5rem;
         min-width: 23.75rem;
         align-items: center;
+        max-width: 80%; /* Adjust percentage as needed */
     }
     
     .hero-content p {
@@ -424,6 +429,11 @@ body {
 
     .about-image {
         display: none;
+    }
+
+    .about-content .subtitle {
+        font-size: 1.25rem; /* Example: adjust as needed */
+        max-width: 80%; /* Adjust percentage as needed */
     }
 
     .cards {

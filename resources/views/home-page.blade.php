@@ -47,7 +47,7 @@
               </div>
 
               <div class="card">
-                <h3>EXCELENCIA</h3>
+                <h3>EXCELÊNCIA</h3>
                 <p>
                   Comprometemo-nos a oferecer o melhor, 
                   com dedicação e cuidado em cada detalhe

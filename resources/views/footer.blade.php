@@ -32,7 +32,7 @@
 
     <div class="footer-bottom">
         <p class="copyright">
-            Copyright 2025 © MMBA Advogados, Todos os direitos reservados.
+            Copyright 2025 © Todos os direitos reservados.
         </p>
         <div class="footer-links">
             <a href="/privacy">Política de Privacidade</a>
