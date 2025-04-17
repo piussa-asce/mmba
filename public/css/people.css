@@ -65,7 +65,7 @@ body {
   font-size: 3rem;
   line-height: 1.35;
   font-weight: 500;
-  max-width: 41vw;
+  width: 41vw;
 }
 
 .highlight {
@@ -195,7 +195,7 @@ img.social-link {
 }
 
 /* Responsive Design */
-@media (max-width: 75rem) {
+@media (max-width: 1200px) {
   .header {
     padding: 2.5rem 1.875rem;
   }
@@ -207,8 +207,8 @@ img.social-link {
 
   .hero {
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-title,
@@ -259,7 +259,7 @@ img.social-link {
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .logo {
     width: 11.25rem;
   }
@@ -297,5 +297,34 @@ img.social-link {
     padding-left: 0rem;
     padding-right: 0rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title h1 {
+    width: 90vw;
+    font-size: 1.5rem;
+  }
+
+  .member-quote p {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .team-card {
+    margin: 4rem auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+  }
+
+  .member-description,
+  .member-quote {
+    font-size: 1rem;
   }
 }

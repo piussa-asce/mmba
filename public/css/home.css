@@ -333,6 +333,7 @@ body {
 
 .text-title {
     font-size: 2rem;
+
 }
 
 .text-titles h2 {
@@ -340,7 +341,7 @@ body {
 }
 
 .yellow {
-    color: var(--primary-color);
+    color: #F1BD34;
 }
 
 

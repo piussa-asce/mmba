@@ -19,9 +19,9 @@
     @include('navbar-fixed')
     <main class="main">
       <div class="cont-grid">
-        <section class="contact-section">
-          <div class="contact-grid">
-            <div class="contact-left">
+        <section class="contac-section">
+          <div class="contac-grid">
+            <div class="contac-left">
               <h1 class="title">Entre em contacto</h1>
               <div class="company-name">
                 <span class="company-text">MEDINA MONTEIRO </span>
@@ -30,16 +30,15 @@
               </div>
               <div class="map-container">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d389.1629926956701!2d-9.13997387553408!3d38.710830268706246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spt!4v1744738483933!5m2!1sen!2spt"
-                  width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.328210089264!2d-9.139702388731006!3d38.7106259300787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193478d5482ec3%3A0x2138374e42d84c2!2sR.%20Garrett%2019%2C%201200-092%20Lisboa!5e0!3m2!1sen!2spt!4v1744887177185!5m2!1sen!2spt"
+                  width="860" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <grid>
-              <div class="contact-right">
-                <div class="contact-info">
-                  <div class="contact-item">
+              <div class="contac-right">
+                <div class="contac-info">
+                  <div class="contac-item">
                     <div class="icon">
                       <img src="/icons/location.svg" alt="Location" />
                     </div>
@@ -49,7 +48,7 @@
                     </div>
                   </div>
 
-                  <div class="contact-item">
+                  <div class="contac-item">
                     <div class="icon">
                       <img src="/icons/mail.svg" alt="Email" />
                     </div>
@@ -59,7 +58,7 @@
                     </div>
                   </div>
 
-                  <div class="contact-item">
+                  <div class="contac-item">
                     <div class="icon">
                       <img src="/icons/phone.svg" alt="Phone" />
                     </div>

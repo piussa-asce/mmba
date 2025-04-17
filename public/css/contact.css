@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--white);
+  margin: 0;
 }
 
 .container {
@@ -24,30 +25,29 @@ body {
 }
 
 .main {
-  margin-top: 9.375rem;
+  margin-top: 12rem;
 }
 
 .cont-grid {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 7.5rem 1.25rem;
+  width: 100vw;
+  padding: 7.5rem 0;
   display: flex;
   flex-direction: column;
-  background: #fccc50 50%;
-  padding: 3.75rem;
+  background: linear-gradient(to bottom, var(--primary-color) 50%, white 50%);
+  padding: 5rem 3.75rem;
 }
 
-.contact-grid {
+.contac-grid {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 3.75rem;
   max-width: 75rem;
   margin: 0 auto;
 }
 
-.contact-left {
+.contac-left {
   flex: 1;
   min-width: 31.25rem;
   text-align: left;
@@ -68,7 +68,7 @@ body {
 }
 
 .company-highlight {
-  color: #d1a03f;
+  color: #FFFFFF;
 }
 
 .map-container {
@@ -79,22 +79,22 @@ body {
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
 }
 
-.contact-right {
+.contac-right {
   flex: 1;
   min-width: 20rem;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 1.25rem;
+  padding: -0.75rem 0;
 }
 
-.contact-info {
+.contac-info {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   width: 100%;
 }
 
-.contact-item {
+.contac-item {
   display: flex;
   align-items: center;
   gap: .9375rem;
@@ -129,13 +129,9 @@ body {
 }
 
 @media (max-width: 48rem) {
-  .contact-grid {
-    flex-direction: row;
-    gap: 2.5rem;
-  }
 
-  .contact-left,
-  .contact-right {
+  .contac-left,
+  .contac-right {
     min-width: 100%;
   }
 
@@ -143,11 +139,7 @@ body {
     height: 17.5rem;
   }
 
-  .container {
-    padding: 3.75rem 1.25rem;
-  }
-
-  .contact-section {
+  .contac-section {
     padding: 2.5rem 1.25rem;
   }
 }
