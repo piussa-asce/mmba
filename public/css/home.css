@@ -180,7 +180,7 @@ body {
 
 /* Services Section */
 .services {
-    margin: 117px auto;
+    margin: 0 auto;
     background: linear-gradient(to bottom, var(--primary-color) 50%, white 50%);
     max-height: 920px;
     max-width: 90rem;
@@ -192,8 +192,17 @@ body {
 }
 
 .services-messages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 4rem 8.125rem;
-    gap: 6.25rem;
+    gap: 2rem;
+}
+
+.title {
+    padding: 2rem 0 0 0;
+    width: 45rem;
 }
 
 .services-big-message {
@@ -204,7 +213,7 @@ body {
 }
 
 .services-message {
-    max-width: 31.25rem;
+    max-width: 21.25rem;
 }
 
 .white {
@@ -366,7 +375,7 @@ body {
     }
 
     .services {
-        margin: 7.3125rem auto 0 auto;
+        margin: 0 auto;
         padding: 0 2rem;
     }
 }
@@ -385,12 +394,16 @@ body {
     }
 
     .services {
-        margin-top: 6.25rem;
         padding: 0 2rem;
     }
 
     .services-messages {
+        gap: 2rem;
         padding: 1rem 2rem;
+    }
+
+    .title {
+        width: 35.625rem;
     }
 
     .services-grid {
@@ -526,7 +539,11 @@ body {
     }
 
     .services-messages {
-        padding: 0;
+        padding: 0 1rem;
+    }
+
+    .services-message {
+        display: none;
     }
 
     .services-cards {

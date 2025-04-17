@@ -140,50 +140,70 @@
                 const teamCard = document.createElement('div');
                 teamCard.className = 'team-card';
 
-                if (member.id == 6) {
+                if (member.id == 6 && window.innerWidth > 768) {
                     teamCard.innerHTML = `
-                <div class="team-content ${member.imagePosition}">
-                    <div class="member-info">
-                        <h2>${member.name}</h2>
-                        <p class="member-title">${member.title}</p>
-                        <p class="member-description">${member.description}</p>
-                        ${member.quote ? `
-                            <hr class="line" />
-                            <p class="member-quote">${member.quote}</p>
-                        ` : ''}
-                    </div>
-                    <img
-                        class="member-image"
-                        alt="${member.name}"
-                        src="${member.image}"
-                    />
-                </div>
-            `;
-                }
-                else if (member.id % 2 === 1 || window.innerWidth < 768) {
-                    teamCard.innerHTML = `
-                <div class="team-content ${member.imagePosition}">
-                    <img
-                        class="member-image"
-                        alt="${member.name}"
-                        src="${member.image}"
-                    />
-                    <div class="member-info">
-                        <h2>${member.name}</h2>
-                        <p class="member-title">${member.title}</p>
-                        <p class="member-description">${member.description}</p>
-                        ${member.quote ? `
-                            <hr class="line" />
-                            <p class="member-quote">${member.quote}</p>
-                        ` : ''}
-                        <div class="social-links">
-                            <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer">
-                                <img class="social-link" src="/icons/linkedin.svg" alt="LinkedIn" />
-                            </a>
+                        <div class="team-content ${member.imagePosition}">
+                            <div class="member-info">
+                                <h2>${member.name}</h2>
+                                <p class="member-title">${member.title}</p>
+                                <p class="member-description">${member.description}</p>
+                                ${member.quote ? `
+                                    <hr class="line" />
+                                    <p class="member-quote">${member.quote}</p>
+                                ` : ''}
+                            </div>
+                            <img
+                                class="member-image"
+                                alt="${member.name}"
+                                src="${member.image}"
+                            />
                         </div>
-                    </div>
-                </div>
-            `;
+                    `;
+                } 
+                else if (member.id == 6 && window.innerWidth <= 768) {
+                    teamCard.innerHTML = `
+                        <div class="team-content ${member.imagePosition}">
+                            <img
+                                class="member-image"
+                                alt="${member.name}"
+                                src="${member.image}"
+                            />
+                            <div class="member-info">
+                                <h2>${member.name}</h2>
+                                <p class="member-title">${member.title}</p>
+                                <p class="member-description">${member.description}</p>
+                                ${member.quote ? `
+                                    <hr class="line" />
+                                    <p class="member-quote">${member.quote}</p>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                }
+                else if (member.id % 2 === 1 || window.innerWidth <= 768) {
+                    teamCard.innerHTML = `
+                        <div class="team-content ${member.imagePosition}">
+                            <img
+                                class="member-image"
+                                alt="${member.name}"
+                                src="${member.image}"
+                            />
+                            <div class="member-info">
+                                <h2>${member.name}</h2>
+                                <p class="member-title">${member.title}</p>
+                                <p class="member-description">${member.description}</p>
+                                ${member.quote ? `
+                                    <hr class="line" />
+                                    <p class="member-quote">${member.quote}</p>
+                                ` : ''}
+                                <div class="social-links">
+                                    <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer">
+                                        <img class="social-link" src="/icons/linkedin.svg" alt="LinkedIn" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
                     /* 
                     <a href="${member.cv}" target="_blank" rel="noopener noreferrer">
                                         <img class="social-link" src="/icons/cv.svg" alt="CV" />
@@ -191,28 +211,28 @@
                     */
                 } else {
                     teamCard.innerHTML = `
-                <div class="team-content ${member.imagePosition}">
-                    <div class="member-info">
-                        <h2>${member.name}</h2>
-                        <p class="member-title">${member.title}</p>
-                        <p class="member-description">${member.description}</p>
-                        ${member.quote ? `
-                            <hr class="line" />
-                            <p class="member-quote">${member.quote}</p>
-                        ` : ''}
-                        <div class="social-links">
-                            <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer">
-                                <img class="social-link" src="/icons/linkedin.svg" alt="LinkedIn" />
-                            </a>
+                        <div class="team-content ${member.imagePosition}">
+                            <div class="member-info">
+                                <h2>${member.name}</h2>
+                                <p class="member-title">${member.title}</p>
+                                <p class="member-description">${member.description}</p>
+                                ${member.quote ? `
+                                    <hr class="line" />
+                                    <p class="member-quote">${member.quote}</p>
+                                ` : ''}
+                                <div class="social-links">
+                                    <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer">
+                                        <img class="social-link" src="/icons/linkedin.svg" alt="LinkedIn" />
+                                    </a>
+                                </div>
+                            </div>
+                            <img
+                                class="member-image"
+                                alt="${member.name}"
+                                src="${member.image}"
+                            />
                         </div>
-                    </div>
-                    <img
-                        class="member-image"
-                        alt="${member.name}"
-                        src="${member.image}"
-                    />
-                </div>
-            `;
+                    `;
                 }
 
                 people.appendChild(teamCard);

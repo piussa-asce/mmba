@@ -71,6 +71,7 @@
             <h2 class="services-big-message">APOIO JURÍDICO DE <span class="services-big-message white">CONFIANÇA</span>,</h2>
             <h2 class="services-big-message">À MEDIDA DAS SUAS NECESSIDADES </h2>
           </div>
+          <p class="services-message">Atuamos para proteger os seus interesses, prevenir conflitos ou impulsionar o crescimento seguro da sua empresa</p>
         </div>
         <div class="carousel-container">
           <img src="/svg/home/left.svg" class="arrow left"></img>  
