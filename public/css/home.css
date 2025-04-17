@@ -415,7 +415,6 @@ body {
         top: 8.5rem;
         min-width: 23.75rem;
         align-items: center;
-        max-width: 80%; /* Adjust percentage as needed */
     }
     
     .hero-content p {
