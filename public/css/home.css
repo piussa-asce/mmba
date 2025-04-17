@@ -452,6 +452,7 @@ body {
 
     .about-content .subtitle {
         font-size: 0.75rem;
+        font-weight: 400;
     }
 
     .cards {
@@ -504,9 +505,8 @@ body {
         padding: 1.25rem;
     }
 
-    .team-photo {
-        min-width: 250px;
-        min-height: auto;
+    .subtitle {
+        font-weight: 400;
     }
 }
 
@@ -576,9 +576,5 @@ body {
 @media (max-width: 400px) {
     .hero-content p {
         font-size: 2rem;
-    }
-
-    .about-content .subtitle {
-        font-size: 0.75rem;
     }
 }
