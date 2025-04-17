@@ -19,14 +19,18 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-logo img {
     cursor: pointer;
-    width: 18.4375rem;
-    height: 3.25rem;
-    margin-bottom: 1rem;
+    width: 13rem;
+    height: 2rem;
+    margin: 1.125rem 0 0 0;
+}
+
+.footer-logo p {
+    font-size: 0.75rem;
 }
 
 .footer-info {
