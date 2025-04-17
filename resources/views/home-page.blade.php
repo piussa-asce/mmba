@@ -27,7 +27,7 @@
           
         <div class="about-content">
           <div class="about-text">
-            <p class="subtitle">PROPÓSITO, ESTRATÉGIA E COMPROMISSO</p>
+            <span class="subtitle">PROPÓSITO, ESTRATÉGIA E COMPROMISSO</span>
             <h2>SOBRE NÓS</h2>
             <p>
               Construímos relações de confiança e oferecemos soluções jurídicas estratégicas e personalizadas.
@@ -87,7 +87,10 @@
       <section class="team">
         <img src="/home/team_photo.jpg" alt="team photo" class="team-photo">
         <div class="text">
-          <h2 class="text-title">CONFIANÇA, RIGOR E <span class="yellow">COMPROMISSO</span></h2>
+          <div class="text-titles">
+            <span class="subtitle">EQUIPA</span>
+            <h2 class="text-title">CONFIANÇA, RIGOR E <span class="yellow">COMPROMISSO</span></h2>
+          </div>
           <p class="yellow">Mais do que advogados, somos parceiros nas decisões que moldam o seu futuro.</p>
           <p>Com diferentes percursos e áreas de especialização, a nossa equipa combina conhecimento técnico com uma visão estratégica e humana do Direito.</p>
           <p>Trabalhamos em conjunto para garantir  soluções sólidas, personalizadas e orientadas para resultados reais.</p>

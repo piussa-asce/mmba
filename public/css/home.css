@@ -1,10 +1,9 @@
 :root {
-    --primary-color: #D9AC2F;
+    --primary-color: #FBD77E;
     --text-color: #000000;
     --text-light: #00000066;
     --white: #ffffff;
     --white-text: #ffffff;
-    --yellow-bg: rgba(241, 182, 41, 0.4);
     --ff: Raleway;
 }
 
@@ -17,7 +16,7 @@ p {
     margin: 0;
 }
 h2 {
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 body {
@@ -81,7 +80,7 @@ body {
     cursor: pointer;
     width: fit-content;
     height: fit-content;
-    padding: 7.5px 20px;
+    padding: 7.5px 0px;
     position: relative;
     display: inline-block;
 }
@@ -116,6 +115,7 @@ body {
 }
 
 .subtitle {
+    font-size: 0.75rem;
     font-weight: 600;
     margin-bottom: 10px;
     width: 560px;
@@ -188,7 +188,7 @@ body {
 }
 
 .services-small-title {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .services-messages {
@@ -333,6 +333,10 @@ body {
 
 .text-title {
     font-size: 2rem;
+}
+
+.text-titles h2 {
+    margin-top: 0;
 }
 
 .yellow {
