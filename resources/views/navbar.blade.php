@@ -10,7 +10,7 @@
         </div>
         <div id="submenu" class="sub-menu">
             <img src="/svg/back.svg" height=50 width=50 alt="" class="back" onclick="toggleSubMenu(false)">
-            <img src="/svg/logo-black.svg" height=60 width=350 alt="" onclick="goTo('logo')">
+            <img src="/svg/logo-black.svg" height=50 width=275 alt="" onclick="goTo('logo')">
             <div class="submenu-button" onclick="goTo('#about')">SOBRE NÓS</div>
             <div class="submenu-button" onclick="goTo('team')">EQUIPA</div>
             <div class="submenu-button" onclick="goTo('#services')">SERVIÇOS</div>

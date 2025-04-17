@@ -365,7 +365,7 @@ body {
     }
 
     .services {
-        margin: 0 auto;
+        margin: 7.3125rem auto 0 auto;
         padding: 0 2rem;
     }
 }
@@ -384,7 +384,8 @@ body {
     }
 
     .services {
-        padding: 1.25rem 2rem;
+        margin-top: 6.25rem;
+        padding: 0 2rem;
     }
 
     .services-messages {
@@ -519,7 +520,8 @@ body {
     }
 
     .services {
-        padding: 0.625rem 0.625rem;
+        margin-top: 2rem;
+        padding: 0 0.625rem;
     }
 
     .services-messages {
