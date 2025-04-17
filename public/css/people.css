@@ -19,6 +19,12 @@ body {
   padding: 0 calc((100vw - 90rem) / 2);
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .page-container {
   display: flex;
   justify-content: center;
