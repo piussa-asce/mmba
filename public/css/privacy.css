@@ -1,6 +1,6 @@
 :root {
   --primary-color: #dcb443;
-  --secondary-color: #FFBB00;
+  --secondary-color: #ffbb00;
   --text-color: #000000;
   --text-light: #00000066;
   --white: #ffffff;
@@ -14,14 +14,14 @@
 }
 
 body {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+  max-width: 120rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .page-title {
   margin: 9.375rem auto 0;
@@ -42,24 +42,24 @@ body {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   color: #222;
-  border-bottom: .125rem solid #ddd;
-  padding-bottom: .5rem;
+  border-bottom: 0.125rem solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
 .content-section p {
   font-size: 1rem;
-  margin-top: .9375rem;
+  margin-top: 0.9375rem;
   text-align: justify;
 }
 
 .content-section ul {
   padding-left: 1.25rem;
-  margin-top: .9375rem;
-  margin-top: .625rem;
+  margin-top: 0.9375rem;
+  margin-top: 0.625rem;
 }
 
 .content-section li {
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .content-section a {
@@ -75,7 +75,7 @@ body {
 
 @media (max-width: 48rem) {
   .content-section {
-    padding: 0 .9375rem;
+    padding: 0 0.9375rem;
   }
 
   .content-section h2 {
@@ -84,13 +84,13 @@ body {
 
   .content-section p,
   .content-section li {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
   }
 }
 
 @media (max-width: 30rem) {
   .content-section {
-    padding: 0 .75rem;
+    padding: 0 0.75rem;
   }
 
   .content-section h2 {
@@ -99,12 +99,12 @@ body {
 
   .content-section p,
   .content-section li {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .page-title h1 {
     font-size: 1.375rem;
     text-align: center;
-    padding: 0 .625rem;
+    padding: 0 0.625rem;
   }
 }
