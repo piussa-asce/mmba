@@ -99,7 +99,6 @@
         </div>
       </section>
 
-
       @include('footer')
     </div>
 

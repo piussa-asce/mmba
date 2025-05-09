@@ -328,8 +328,9 @@ body {
 }
 
 .team-photo {
+    padding: 0 10px;
     flex: 1;
-    width: 34.375rem;
+    width: 40%;
 }
 
 .text {
@@ -420,6 +421,19 @@ body {
 
 }
 
+@media (max-width: 900px) {
+    
+    .team {
+        flex-direction: column;
+        padding: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .team-photo {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .about {
         padding: 2rem 1.25rem;
@@ -507,6 +521,7 @@ body {
     
     .team {
         padding: 1.25rem;
+        margin-top: 2rem;
     }
 
     .subtitle {
@@ -530,6 +545,10 @@ body {
         margin-top: 3.125rem;
         width: 100vw;
         height: 16.75rem;
+    }
+
+    .indicators {
+        bottom: 0.75rem;
     }
 
     .arrow {
@@ -574,6 +593,11 @@ body {
         padding: 0 0.1875rem;
         font-size: 0.55rem;
     }
+
+    .team {
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
