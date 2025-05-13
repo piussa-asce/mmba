@@ -58,31 +58,27 @@ function goTo(id) {
 }
 
 function toggleLanguage() {
+    let newLang;
     let lang = localStorage.getItem("lang");
-    if (lang == null || lang == "PT") lang = "EN";
-    else lang = "PT";
-    localStorage.setItem("lang", lang);
+    if (lang == null || lang == "PT") newLang = "EN";
+    else newLang = "PT";
+    localStorage.setItem("lang", newLang);
 
     // if services or about us is involved
     let hash = location.href.split('#').pop();
-    if (hash == "about") {
-        if (lang == "EN") location.href = "/en#about";
-        if (lang == "PT") location.href = "/#about";
-        return
-    }
-    if (hash == "services") {
-        if (lang == "EN") location.href = "/en#services";
-        if (lang == "PT") location.href = "/#services";
+    if (hash == "about" || hash == "services") {
+        if (newLang == "EN") location.href = "/en";
+        if (newLang == "PT") location.href = "/";
         return
     }
 
     // other
     if (location.href.slice(-1) == "/") {
-        if (lang == "EN") location.href = location.href + "en"
+        if (newLang == "EN") location.href = location.href + "en"
         else location.href = location.href.slice(0, -3);
         return
     } else {
-        if (lang == "EN") location.href = location.href + "/en"
+        if (newLang == "EN") location.href = location.href + "/en"
         else location.href = location.href.slice(0, -2);
     }
 }

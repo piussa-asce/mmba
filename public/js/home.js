@@ -103,31 +103,20 @@ const en_services = [
 // Populate services grid
 function populateServices() {
     const servicesGrid = document.getElementById('services-cards');
-    if (localStorage.getItem("lang") == "EN") {
-        en_services.forEach(service => {
-            const serviceItem = document.createElement('div');
-            serviceItem.className = 'services-card';
-            
-            serviceItem.innerHTML = `
-            <img src="${service.icon}" alt="${service.alt}" class="service-image" />
-            <p class="service-title">${service.title}</p>
-            `;
-            
-            servicesGrid.appendChild(serviceItem);
-        });
-    } else {
-        services.forEach(service => {
-            const serviceItem = document.createElement('div');
-            serviceItem.className = 'services-card';
-            
-            serviceItem.innerHTML = `
-            <img src="${service.icon}" alt="${service.alt}" class="service-image" />
-            <p class="service-title">${service.title}</p>
-            `;
-            
-            servicesGrid.appendChild(serviceItem);
-        });
-    }
+    let cards;
+    if (localStorage.getItem("lang") == "EN") cards = en_services;
+    else cards = services;
+    cards.forEach(service => {
+        const serviceItem = document.createElement('div');
+        serviceItem.className = 'services-card';
+        
+        serviceItem.innerHTML = `
+        <img src="${service.icon}" alt="${service.alt}" class="service-image" />
+        <p class="service-title">${service.title}</p>
+        `;
+        
+        servicesGrid.appendChild(serviceItem);
+    });
 }
 
 populateServices();
