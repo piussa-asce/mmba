@@ -49,21 +49,85 @@ const services = [
 }
 ];
 
+const en_services = [
+{
+    title: "COMMERCIAL LAW",
+    icon: "/svg/home/comercial.svg",
+},
+{
+    title: "ADMINISTRATIVE LAW",
+    icon: "/svg/home/direito_administrativo.svg",
+},
+{
+    title: "ARBITRATION",
+    icon: "/svg/home/arbitragem.svg",
+},
+{
+    title: "REAL ESTATE LAW",
+    icon: "/svg/home/imobiliario.svg",
+},
+{
+    title: "CIVIL LAW",
+    icon: "/svg/home/civil.svg",
+},
+{
+    title: "LABOR LAW",
+    icon: "/svg/home/direito_trabalho.svg",
+},
+{
+    title: "CRIMINAL LAW",
+    icon: "/svg/home/penal.svg",
+},
+{
+    title: "PUBLIC PROCUREMENT",
+    icon: "/svg/home/contratacao_publica.svg",
+},
+{
+    title: "CORPORATE LAW",
+    icon: "/svg/home/societario.svg",
+},
+{
+    title: "IMMIGRATION AND INTEGRATION SUPPORT LAW",
+    icon: "/svg/home/integracao.svg",
+},
+{
+    title: "FAMILY AND INHERITANCE LAW",
+    icon: "/svg/home/familia.svg",
+},
+{
+    title: "TOURISM LAW",
+    icon: "/svg/home/turismo.svg",
+}    
+];
+
 // Populate services grid
 function populateServices() {
     const servicesGrid = document.getElementById('services-cards');
-    
-    services.forEach(service => {
-        const serviceItem = document.createElement('div');
-        serviceItem.className = 'services-card';
-        
-        serviceItem.innerHTML = `
-        <img src="${service.icon}" alt="${service.alt}" class="service-image" />
-        <p class="service-title">${service.title}</p>
-        `;
-        
-        servicesGrid.appendChild(serviceItem);
-    });
+    if (localStorage.getItem("lang") == "EN") {
+        en_services.forEach(service => {
+            const serviceItem = document.createElement('div');
+            serviceItem.className = 'services-card';
+            
+            serviceItem.innerHTML = `
+            <img src="${service.icon}" alt="${service.alt}" class="service-image" />
+            <p class="service-title">${service.title}</p>
+            `;
+            
+            servicesGrid.appendChild(serviceItem);
+        });
+    } else {
+        services.forEach(service => {
+            const serviceItem = document.createElement('div');
+            serviceItem.className = 'services-card';
+            
+            serviceItem.innerHTML = `
+            <img src="${service.icon}" alt="${service.alt}" class="service-image" />
+            <p class="service-title">${service.title}</p>
+            `;
+            
+            servicesGrid.appendChild(serviceItem);
+        });
+    }
 }
 
 populateServices();
