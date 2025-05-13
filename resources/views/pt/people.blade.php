@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        @include('navbar')
+        @include('pt.navbar')
 
         <!-- Hero Section -->
         <section class="hero-section">
@@ -44,7 +44,7 @@
 
         </section>
 
-        @include('footer-dark')
+        @include('pt.footer-dark')
     </div>
 
     <script>
@@ -97,7 +97,7 @@
                 quote:
                     '"Na advocacia, conhecimento é poder — mas é a coragem em agir que verdadeiramente transforma."',
                 image: "/people/image-8.png",
-                imagePosition: "left",
+                imagePosition: "right",
                 linkedin: "https://www.linkedin.com/in/tom%C3%A1s-da-silva-freitas-144a5b221/",
                 cv: "#",
             },
@@ -110,7 +110,7 @@
                 quote:
                     '"Ser advogado é escutar com atenção, aconselhar com sabedoria e agir com justiça."',
                 image: "/people/image-andre-people.png",
-                imagePosition: "right",
+                imagePosition: "left",
                 linkedin: "https://www.linkedin.com/in/andr%C3%A9-silva-freitas-7339b62b1/",
                 cv: "#",
             },
@@ -140,7 +140,7 @@
                 const teamCard = document.createElement('div');
                 teamCard.className = 'team-card';
 
-                if (member.id == 6 && window.innerWidth > 768) {
+                if (member.id == 6 && window.innerWidth > 1200) {
                     teamCard.innerHTML = `
                         <div class="team-content ${member.imagePosition}">
                             <div class="member-info">
@@ -160,7 +160,7 @@
                         </div>
                     `;
                 } 
-                else if (member.id == 6 && window.innerWidth <= 768) {
+                else if (member.id == 6 && window.innerWidth <= 1200) {
                     teamCard.innerHTML = `
                         <div class="team-content ${member.imagePosition}">
                             <img
@@ -180,7 +180,7 @@
                         </div>
                     `;
                 }
-                else if (member.id % 2 === 1 || window.innerWidth <= 768) {
+                else if (member.id % 2 === 1 || window.innerWidth <= 1200) {
                     teamCard.innerHTML = `
                         <div class="team-content ${member.imagePosition}">
                             <img

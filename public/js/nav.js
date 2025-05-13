@@ -3,29 +3,32 @@ const subMenu = document.getElementById('submenu');
 const subMenuLogo = document.getElementById('sub-menu-logo');
 const navLinks = document.getElementById('nav-links');
 const logo = document.getElementById('logo');
+const lang = document.getElementById('lang');
 
 if (window.scrollY > 5) {
     navEl.classList.add('navbar-scroll');
     navLinks.style.color = 'black';
-    logo.src = "/svg/logo-black.svg"
-    subMenuLogo.src = "/svg/burger-black.svg"
+    lang.style.color = "black";
+    logo.src = "/svg/logo-black.svg";
+    subMenuLogo.src = "/svg/burger-black.svg";
 }
 
 window.addEventListener('scroll', () => {
-    let path = window.location.pathname; 
-    if (path == "/privacy" || path == "/terms" || path == "/contacts") return;
+    let path = window.location.pathname;
+    if (path.startsWith("/privacy") || path.startsWith("/terms") || path.startsWith("/contacts")) return;
     if (window.scrollY > 5) {
         navEl.classList.add('navbar-scroll');
         navLinks.style.color = 'black';
-        logo.src = "svg/logo-black.svg"
-        subMenuLogo.src = "svg/burger-black.svg"
-
+        lang.style.color = "black";
+        logo.src = "/svg/logo-black.svg";
+        subMenuLogo.src = "/svg/burger-black.svg";
     }
     else {
         navEl.classList.remove('navbar-scroll');
         navLinks.style.color = 'white';
-        logo.src = "/svg/logo-white.svg"
-        subMenuLogo.src = "svg/burger.svg"
+        lang.style.color = "white";
+        logo.src = "/svg/logo-white.svg";
+        subMenuLogo.src = "/svg/burger.svg";
         
     }
 });
@@ -35,21 +38,51 @@ function toggleSubMenu(open) {
 }
 
 function goTo(id) {
+    let path = window.location.pathname;
+    let currentLang = localStorage.getItem("lang");
     if (id == "#about") {
-        if (window.location.pathname != "/") window.location.href = "/#about";
+        if (path != "/" && path != "/en") window.location.href = currentLang == "EN" ? "/en#about" : "/#about";
         document.getElementById("about").scrollIntoView({behavior: 'smooth'});
     }
     if (id == "#services") {
-        if (window.location.pathname != "/") window.location.href = "/#services";
+        if (path != "/" && path != "/en") window.location.href = currentLang == "EN" ? "/en#services" : "/#services";
         document.getElementById("services").scrollIntoView({behavior: 'smooth'});
     }  
     if (id == "logo") {
-        console.log(window.location.pathname);
-        if (window.location.pathname != "/") window.location.href = "/";
+        if (path != "/" && path != "/en") window.location.href = currentLang == "EN" ? "/en" : "/";
         else document.getElementById("hero").scrollIntoView({behavior: 'smooth'});  
     }
-    if (id == "team") window.location.href = "/team";
-    if (id == "contacts") window.location.href = "/contacts";   
-    if (id == "services") window.location.href = "/services";   
+    if (id == "team") window.location.href = currentLang == "EN" ? "/team/en" : "/team";
+    if (id == "contacts") window.location.href = currentLang == "EN" ? "/contacts/en" : "/contacts";
     if (subMenu.style.display == 'flex') subMenu.style.display = 'none';
+}
+
+function toggleLanguage() {
+    let lang = localStorage.getItem("lang");
+    if (lang == null || lang == "PT") lang = "EN";
+    else lang = "PT";
+    localStorage.setItem("lang", lang);
+
+    // if services or about us is involved
+    let hash = location.href.split('#').pop();
+    if (hash == "about") {
+        if (lang == "EN") location.href = "/en#about";
+        if (lang == "PT") location.href = "/#about";
+        return
+    }
+    if (hash == "services") {
+        if (lang == "EN") location.href = "/en#services";
+        if (lang == "PT") location.href = "/#services";
+        return
+    }
+
+    // other
+    if (location.href.slice(-1) == "/") {
+        if (lang == "EN") location.href = location.href + "en"
+        else location.href = location.href.slice(0, -3);
+        return
+    } else {
+        if (lang == "EN") location.href = location.href + "/en"
+        else location.href = location.href.slice(0, -2);
+    }
 }

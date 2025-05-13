@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      @include('navbar')
+      @include('pt.navbar')
       <!-- Hero Section -->
       <section class="hero" id="hero">
         <div class="hero-content">
@@ -99,7 +99,7 @@
         </div>
       </section>
 
-      @include('footer')
+      @include('pt.footer')
     </div>
 
     <script src="/js/home.js" async defer></script>

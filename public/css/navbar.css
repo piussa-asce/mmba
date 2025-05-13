@@ -98,6 +98,14 @@ nav {
     transform-origin: bottom left;
 }
 
+#lang {
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: Raleway;
+    color: white;
+    cursor: pointer;
+}
+
 .nav-links {
     display: flex;
     gap: 2.5rem;
@@ -136,6 +144,10 @@ nav {
 .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+#submenu-lang  {
+    cursor: pointer;
 }
 
 @media (max-width: 1503px) {
