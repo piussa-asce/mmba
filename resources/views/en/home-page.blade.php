@@ -39,9 +39,9 @@
 
             <div class="cards">
               <div class="card">
-                <h3>Client Focused</h3>
+                <h3>CLIENT FOCUSED</h3>
                 <p>
-                  Our priority is to understand and meet our clients’ needs.
+                  Our priority is to understand and meet all of our clients’ needs.
                 </p>
               </div>
 
