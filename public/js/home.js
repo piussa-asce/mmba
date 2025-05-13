@@ -100,11 +100,15 @@ const en_services = [
 }    
 ];
 
+function getLanguage() {
+    return location.pathname.split("/").slice(-1) == "en" ? "EN" : "PT";
+}
+
 // Populate services grid
 function populateServices() {
     const servicesGrid = document.getElementById('services-cards');
     let cards;
-    if (localStorage.getItem("lang") == "EN") cards = en_services;
+    if (getLanguage() == "EN") cards = en_services;
     else cards = services;
     cards.forEach(service => {
         const serviceItem = document.createElement('div');

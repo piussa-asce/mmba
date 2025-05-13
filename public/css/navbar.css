@@ -148,6 +148,9 @@ nav {
 
 #submenu-lang  {
     cursor: pointer;
+    position: absolute;
+    bottom: 70px;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1503px) {

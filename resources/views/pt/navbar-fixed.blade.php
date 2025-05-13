@@ -7,6 +7,8 @@
             <a class="nav-link" onclick="goTo('team')">EQUIPA</a>
             <a class="nav-link" onclick="goTo('#services')">SERVIÇOS</a>
             <a class="nav-link bold" onclick="goTo('contacts')">CONTACTOS</a>
+            <img src="/svg/sep.svg" width="10" alt="sep">
+            <div id="lang" onclick="toggleLanguage()" style="color:black;">PT</div>
         </div>
         <div id="submenu" class="sub-menu">
             <img src="/svg/back.svg" height=50 width=50 alt="" class="back" onclick="toggleSubMenu(false)">
@@ -15,6 +17,7 @@
             <div class="submenu-button" onclick="goTo('team')">EQUIPA</div>
             <div class="submenu-button" onclick="goTo('#services')">SERVIÇOS</div>
             <div class="submenu-button" onclick="goTo('contacts')">CONTACTOS</div>
+            <div id="submenu-lang" onclick="toggleLanguage()">PT</div>
         </div>
     </nav>
 </section>

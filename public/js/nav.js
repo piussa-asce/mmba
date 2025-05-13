@@ -37,9 +37,13 @@ function toggleSubMenu(open) {
     open ? subMenu.style.display = 'flex' : subMenu.style.display = 'none';
 }
 
+function getLanguage() {
+    return location.pathname.split("/").slice(-1) == "en" ? "EN" : "PT";
+}
+
 function goTo(id) {
     let path = window.location.pathname;
-    let currentLang = localStorage.getItem("lang");
+    let currentLang = getLanguage();
     if (id == "#about") {
         if (path != "/" && path != "/en") window.location.href = currentLang == "EN" ? "/en#about" : "/#about";
         document.getElementById("about").scrollIntoView({behavior: 'smooth'});
@@ -58,25 +62,20 @@ function goTo(id) {
 }
 
 function toggleLanguage() {
-    let newLang;
-    let lang = localStorage.getItem("lang");
-    if (lang == null || lang == "PT") newLang = "EN";
-    else newLang = "PT";
-    localStorage.setItem("lang", newLang);
-
+    let lang = getLanguage();
+    let newLang = lang == "PT" ? "EN" : "PT";
     // if services or about us is involved
     let hash = location.href.split('#').pop();
     if (hash == "about" || hash == "services") {
         if (newLang == "EN") location.href = "/en";
         if (newLang == "PT") location.href = "/";
-        return
+        return;
     }
-
     // other
     if (location.href.slice(-1) == "/") {
-        if (newLang == "EN") location.href = location.href + "en"
+        if (newLang == "EN") location.href += "en"
         else location.href = location.href.slice(0, -3);
-        return
+        return;
     } else {
         if (newLang == "EN") location.href = location.href + "/en"
         else location.href = location.href.slice(0, -2);

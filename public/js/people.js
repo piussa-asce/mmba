@@ -160,11 +160,15 @@ const en_teamMembers = [
         },
     ];
 
+function getLanguage() {
+    return location.pathname.split("/").slice(-1) == "en" ? "EN" : "PT";
+}
+
 function populateTeam() {
     const people = document.getElementById('people');
 
     let cards;
-    if (localStorage.getItem("lang") == "EN") cards = en_teamMembers;
+    if (getLanguage() == "EN") cards = en_teamMembers;
     else cards = teamMembers;
     console.log(cards);
     cards.forEach(member => {
