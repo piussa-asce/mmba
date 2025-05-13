@@ -1,5 +1,9 @@
 const services = [
 {
+    title: "DIREITO COMERCIAL",
+    icon: "/svg/home/comercial.svg",
+},
+{
     title: "DIREITO ADMINISTRATIVO",
     icon: "/svg/home/direito_administrativo.svg",
 },
@@ -28,10 +32,6 @@ const services = [
     icon: "/svg/home/contratacao_publica.svg",
 },
 {
-    title: "DIREITO DO TURISMO",
-    icon: "/svg/home/turismo.svg",
-},
-{
     title: "DIREITO SOCIETÁRIO",
     icon: "/svg/home/societario.svg",
 },
@@ -40,12 +40,12 @@ const services = [
     icon: "/svg/home/integracao.svg",
 },
 {
-    title: "DIREITO COMERCIAL",
-    icon: "/svg/home/comercial.svg",
-},
-{
     title: "DIREITO DA FAMÍLIA E SUCESSÕES",
     icon: "/svg/home/familia.svg",
+},
+{
+    title: "DIREITO DO TURISMO",
+    icon: "/svg/home/turismo.svg",
 }
 ];
 

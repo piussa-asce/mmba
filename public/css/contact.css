@@ -134,7 +134,10 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
+  .cont-grid {
+        padding: 5rem 1.5rem;
+  }
 
   .contac-left,
   .contac-right {
@@ -146,6 +149,6 @@ body {
   }
 
   .contac-section {
-    padding: 2.5rem 1.25rem;
+    padding: 1.5rem 0.75rem;
   }
 }

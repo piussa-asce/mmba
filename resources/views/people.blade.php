@@ -77,6 +77,19 @@
             },
             {
                 id: 3,
+                name: "Inês Kol de Carvalho",
+                title: "Advogada",
+                description:
+                    "Com uma carreira marcada pela versatilidade e experiência multidisciplinar, Inês integrou a MMBA em 2025. Desenvolve a sua prática nas áreas de Direito Imobiliário, Contencioso Civil, Direito dos Estrangeiros, Direito da Família e Nacionalidade, acompanhando com rigor técnico diversas transações e processos complexos.",
+                quote:
+                    '"Na prática jurídica, cada detalhe conta — é na atenção ao pormenor que reside a confiança e a segurança do cliente."',
+                image: "/people/image-ines-people.png",
+                imagePosition: "left",
+                linkedin: "https://www.linkedin.com/in/in%C3%AAskoldecarvalho/",
+                cv: "#",
+            },
+            {
+                id: 4,
                 name: "Tomás da Silva Freitas",
                 title: "Advogado",
                 description:
@@ -89,7 +102,7 @@
                 cv: "#",
             },
             {
-                id: 4,
+                id: 5,
                 name: "André da Silva Freitas",
                 title: "Advogado",
                 description:
@@ -99,19 +112,6 @@
                 image: "/people/image-andre-people.png",
                 imagePosition: "right",
                 linkedin: "https://www.linkedin.com/in/andr%C3%A9-silva-freitas-7339b62b1/",
-                cv: "#",
-            },
-            {
-                id: 5,
-                name: "Inês Kol de Carvalho",
-                title: "Advogada",
-                description:
-                    "Com uma carreira marcada pela versatilidade e experiência multidisciplinar, Inês integrou a MMBA em 2025. Desenvolve a sua prática nas áreas de Direito Imobiliário, Contencioso Civil, Direito dos Estrangeiros, Direito da Família e Nacionalidade, acompanhando com rigor técnico diversas transações e processos complexos.",
-                quote:
-                    '"Na prática jurídica, cada detalhe conta — é na atenção ao pormenor que reside a confiança e a segurança do cliente."',
-                image: "/people/image-ines-people.png",
-                imagePosition: "left",
-                linkedin: "https://www.linkedin.com/in/in%C3%AAskoldecarvalho/",
                 cv: "#",
             },
             {
